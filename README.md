@@ -1,16 +1,19 @@
-## Hi there 👋
 
-<!--
-**ArrafiNurHafiz/ArrafiNurHafiz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# 🟥 ARRAFI — FINAL ASCENSION
 
-Here are some ideas to get you started:
+> SYSTEM OPERATOR • SECURITY • BACKEND • AUTOMATION  
+> CLEARANCE: OMEGA / BLACK OPS
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## IDENTITY
+- Name: Arrafi Nur Hafiz
+- Role: Security-minded Backend Engineer
+- Style: Cyberpunk / Red Neon / Matrix
+
+## CORE PRINCIPLE
+Understand systems.
+Break assumptions.
+Rebuild securely.
+
+## STATUS
+SYSTEM ONLINE.
+CURIOSITY UNLIMITED.
