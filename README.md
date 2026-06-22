@@ -205,13 +205,6 @@ I'm a developer passionate about building at the intersection of **Islamic finan
 
 </div>
 
-<!-- Snake Contribution Chart -->
-<div align="center">
-
-![snake animation](https://raw.githubusercontent.com/ArrafiNurHafiz/ArrafiNurHafiz/output/github-contribution-grid-snake-dark.svg)
-
-</div>
-
 ---
 
 ## 📬 Let's Connect
