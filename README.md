@@ -54,7 +54,6 @@
 
 ---
 
-<!-- About Me -->
 ## 🧑‍💻 About Me
 
 I'm a developer passionate about building at the intersection of **Islamic finance**, **artificial intelligence**, and **modern web technology**. I believe software can be a form of *amal jariyah* — work that continues to benefit others long after its creator.
@@ -67,7 +66,6 @@ I'm a developer passionate about building at the intersection of **Islamic finan
 
 ---
 
-<!-- Focus Areas - HTML Cards -->
 ## 🎯 What I Build
 
 <div align="center">
@@ -76,7 +74,7 @@ I'm a developer passionate about building at the intersection of **Islamic finan
     <td align="center" width="25%">
       <img src="https://img.shields.io/badge/🕌-Islamic%20Fintech-6A0DAD?style=for-the-badge"/>
       <br><br>
-      Sharia compliance engines<br>akad validators<br>Islamic calculators
+      Sharia compliance engines<br>Akad validators<br>Islamic calculators
     </td>
     <td align="center" width="25%">
       <img src="https://img.shields.io/badge/🌐-Full--Stack%20Web-3B82F6?style=for-the-badge"/>
@@ -99,41 +97,48 @@ I'm a developer passionate about building at the intersection of **Islamic finan
 
 ---
 
-<!-- Tech Stack -->
 ## 🚀 Tech Stack
 
 <div align="center">
 
 **🖥️ Frontend**
-
+<br>
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-**⚙️ Backend**
+<br><br>
 
+**⚙️ Backend**
+<br>
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
-**🗄️ Database & Cache**
+<br><br>
 
+**🗄️ Database & Cache**
+<br>
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
 
-**🐳 DevOps & Tools**
+<br><br>
 
+**🐳 DevOps & Tools**
+<br>
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![VPS](https://img.shields.io/badge/VPS-Self--Managed-6A0DAD?style=for-the-badge)
 
-**🤖 AI & Machine Learning**
+<br><br>
 
+**🤖 AI & Machine Learning**
+<br>
 ![Claude API](https://img.shields.io/badge/Claude_API-Anthropic-A855F7?style=for-the-badge)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
@@ -142,7 +147,6 @@ I'm a developer passionate about building at the intersection of **Islamic finan
 
 ---
 
-<!-- Currently Building -->
 ## 🔭 Currently Working On
 
 <div align="center">
@@ -169,7 +173,6 @@ I'm a developer passionate about building at the intersection of **Islamic finan
 
 ---
 
-<!-- GitHub Trophies -->
 ## 🏆 GitHub Trophies
 
 <div align="center">
@@ -180,7 +183,6 @@ I'm a developer passionate about building at the intersection of **Islamic finan
 
 ---
 
-<!-- GitHub Stats -->
 ## 📊 GitHub Stats
 
 <div align="center">
@@ -212,14 +214,13 @@ I'm a developer passionate about building at the intersection of **Islamic finan
 
 ---
 
-<!-- Connect -->
 ## 📬 Let's Connect
 
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ArrafiNurHafiz-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ArrafiNurHafiz)
 [![Instagram](https://img.shields.io/badge/Instagram-@ArrafiNurHafiz-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/ArrafiNurHafiz)
-[![Email](https://img.shields.io/badge/Email-Contact_Me-A855F7?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your@email.com)
+[![Email](https://img.shields.io/badge/Email-Contact_Me-A855F7?style=for-the-badge&logo=gmail&logoColor=white)](mailto:arrafinurhafiz@gmail.com)
 
 <br>
 
