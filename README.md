@@ -58,14 +58,6 @@
 
 I'm a developer passionate about building at the intersection of **Islamic finance**, **artificial intelligence**, and **modern web technology**. I believe software can be a form of *amal jariyah* — work that continues to benefit others long after its creator.
 
-- 🕌 Building **SyariaBank AI** — a free virtual Islamic banking lab for SMK Perbankan Syariah students
-- 🌐 Deep interest in **Decentralized Systems**, Blockchain & Web 3.0
-- 🤖 Integrating **Claude API** into real-world educational tools
-- 📚 Writing technical content in **Bahasa Indonesia** for the local dev community
-- 🌱 Always learning, always shipping something meaningful
-
----
-
 ## 🎯 What I Build
 
 <div align="center">
