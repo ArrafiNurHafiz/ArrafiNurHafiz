@@ -41,9 +41,9 @@
         ___                    ArrafiNurHafiz@github
        /\  \                   ---------------------
       /  \  \                  Role     : Full-Stack Developer & AI Integrator
-     / /\ \  \                 Focus    : Islamic Fintech · AI · Decentralized Systems
+     / /\ \  \                 Focus    : AI · Decentralized Systems
     / /  \ \  \                Mission  : Build technology that is purposeful & impactful
-   / /    \ \  \               Stack    : Next.js · FastAPI · Python · PostgreSQL · Redis
+   / /    \ \  \               Stack    : Laravel · Next.js · FastAPI · Python · PostgreSQL · Redis
   /_/ /^^\ \_\  \              AI Tools : Claude API · scikit-learn · Streamlit
   \_\/    \/_/   \             DevOps   : Docker · VPS (Self-Managed) · Linux
    /  /\  / /\   /             Passion  : Software as a form of  اَمَل جَارِيَة
@@ -134,32 +134,6 @@ I'm a developer passionate about building at the intersection of **Islamic finan
 ![Claude API](https://img.shields.io/badge/Claude_API-Anthropic-A855F7?style=for-the-badge)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-
-</div>
-
----
-
-## 🔭 Currently Working On
-
-<div align="center">
-
-```
-╔═══════════════════════════════════════════════════════════╗
-║       🕌  SyariaBank AI — Virtual Islamic Banking Lab      ║
-╠═══════════════════════════════════════════════════════════╣
-║                                                           ║
-║  ✅  Akad validation engine (Murabahah · Mudharabah ...)  ║
-║  ✅  Sharia compliance detector — riba · gharar · maysir  ║
-║  🔨  Islamic finance calculators  (ZIS · profit-sharing)  ║
-║  🔨  AI assistant powered by Claude API                   ║
-║  📋  Student progression system  (Arabic-level grading)   ║
-║                                                           ║
-║  Stack : Next.js 14 · FastAPI · PostgreSQL · Redis        ║
-║  Deploy: Self-managed VPS · Docker · Ubuntu 24 LTS        ║
-║  Type  : Free donation project for SMK Perbankan Syariah  ║
-║                                                           ║
-╚═══════════════════════════════════════════════════════════╝
-```
 
 </div>
 
