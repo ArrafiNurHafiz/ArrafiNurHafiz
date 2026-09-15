@@ -27,7 +27,7 @@
 <div align="center">
 
 <a href="https://quran.com/11/88">
-  <img src="https://readme-typing-svg.demolab.com?font=Amiri&weight=700&size=26&pause=999999&color=00F2FE&center=true&vCenter=true&width=750&lines=%D9%88%D9%8E%D9%85%D9%8E%D8%A7+%D8%AA%D9%8F%D9%88%D9%81%D9%8A%D9%82%D9%8A+%D8%A5%D9%90%D9%84%D9%8E%D9%91%D8%A7+%D8%A8%D9%90%D8%A7%D9%84%D9%84%D9%8E%D9%91%D9%87%D9%90+%DB%9A+%D8%B9%D9%8E%D9%84%D9%8E%D9%8A%D9%92%D9%87%D9%90+%D8%AA%D9%8E%D9%88%D9%8E%D9%83%D9%8E%D9%84%D9%92%D8%AA%D9%8F+%D9%88%D9%8E%D8%A5%D9%90%D9%84%D9%8E%D9%8A%D9%92%D9%87%D9%90+%D8%A3%D9%8F%D9%86%D9%8A%D8%A8%D9%8F" alt="Quran Surah Hud 11:88" />
+  <img src="https://readme-typing-svg.demolab.com?font=Amiri&weight=700&size=26&pause=999999&color=00F2FE&center=true&vCenter=true&width=750&lines=%D9%88%D9%8E%D9%85%D9%8E%D8%A7+%D8%AA%D9%8F%D9%88%D9%81%D9%8A%D9%82%D9%8A+%D8%A5%D9%90%D9%84%D9%8E%D9%91%D8%A7+%D8%A8%D9%90%D8%A7%D9%84%D9%84%D9%8E%D9%91%D9%87%D9%90+%DB%9A+%D8%B9%D9%8E%D9%84%D9%8E%D9%8A%D9%92%D9%87%D9%90+%D8%AA%D9%8E%D9%88%D9%8E%D9%83%D9%8E%D9%84%D9%92%D8%AA%D9%8F+%D9%88%D9%8E%D8%A5%D9%90%D9%84%D9%8E%D9%92%D9%87%D9%90+%D8%A3%D9%8F%D9%86%D9%8A%D8%A8%D9%8F" alt="Quran Surah Hud 11:88" />
 </a>
 
 > *"And my success is not but through Allah. Upon Him I have relied, and to Him I return."*  
@@ -131,18 +131,6 @@ export const DeveloperProfile = {
 
 ---
 
-### 🏆 Hall of Trophies
-
-<div align="center">
-
-<a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=ArrafiNurHafiz&theme=tokyonight&column=7&margin-w=10&margin-h=10&no-bg=true" width="100%" alt="GitHub Profile Trophies" />
-</a>
-
-</div>
-
----
-
 ### 📊 Real-Time GitHub Telemetry & Analytics
 
 <div align="center">
@@ -151,10 +139,10 @@ export const DeveloperProfile = {
 <table border="0" width="100%">
   <tr>
     <td width="50%" align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=ArrafiNurHafiz&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&border_color=6366f1&title_color=00F2FE&icon_color=818cf8&text_color=cbd5e1&bg_color=050811&hide_border=false" width="100%" alt="GitHub Stats" />
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=ArrafiNurHafiz&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&border_color=6366f1&title_color=00F2FE&icon_color=818cf8&text_color=cbd5e1&bg_color=050811&hide_border=false" width="100%" alt="GitHub Stats" />
     </td>
     <td width="50%" align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArrafiNurHafiz&layout=compact&langs_count=8&theme=tokyonight&border_color=6366f1&title_color=00F2FE&text_color=cbd5e1&bg_color=050811&hide_border=false" width="100%" alt="Top Languages" />
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=ArrafiNurHafiz&layout=compact&langs_count=8&theme=tokyonight&border_color=6366f1&title_color=00F2FE&text_color=cbd5e1&bg_color=050811&hide_border=false" width="100%" alt="Top Languages" />
     </td>
   </tr>
 </table>
@@ -168,9 +156,9 @@ export const DeveloperProfile = {
 
 <br><br>
 
-<!-- Continuous Activity Wave Graph -->
-<a href="https://github.com/ashutosh00710/github-readme-activity-graph">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ArrafiNurHafiz&theme=tokyo-night&bg_color=050811&color=00F2FE&line=6366f1&point=818cf8&area=true&hide_border=false&border_color=6366f1" width="100%" alt="Activity Wave Graph" />
+<!-- Dynamic Electric Cyan Contribution Graph -->
+<a href="https://github.com/ArrafiNurHafiz">
+  <img src="https://ghchart.rshah.org/00f2fe/ArrafiNurHafiz" width="100%" alt="GitHub Contribution Matrix" />
 </a>
 
 </div>
