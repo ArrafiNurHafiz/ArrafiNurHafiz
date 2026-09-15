@@ -43,17 +43,9 @@
 
 <div align="center">
 
-```
-╔═══════════════════════════════════════════════════════════════════════════════════════╗
-║                                                                                       ║
-║                     وَمَا تَوْفِيقِي إِلَّا بِاللَّهِ ۚ عَلَيْهِ تَوَكَّلْتُ وَإِلَيْهِ أُنِيبُ                     ║
-║                                                                                       ║
-║       "And my success is not but through Allah. Upon Him I have relied, and to        ║
-║                                    Him I return."                                     ║
-║                                  — QS. HUD [11:88]                                    ║
-║                                                                                       ║
-╚═══════════════════════════════════════════════════════════════════════════════════════╝
-```
+<a href="https://quran.com/11/88">
+  <img src="https://raw.githubusercontent.com/ArrafiNurHafiz/ArrafiNurHafiz/main/branding/sacred-creed.svg" width="100%" alt="Sacred Creed Quran Hud 11:88 HUD" />
+</a>
 
 </div>
 
@@ -61,25 +53,13 @@
 
 ### 🌐 NMAP NETWORK RECON & TARGET SCAN
 
-```bash
-# nmap -sV -sC -O -T4 target.arrafi.network
-Starting Nmap 7.94 ( https://nmap.org ) at 2026-09-16 00:00 UTC
-Nmap scan report for target.arrafi.network (10.0.0.1337)
-Host is up (0.00012s latency).
+<div align="center">
 
-PORT      STATE SERVICE        VERSION
-22/tcp    open  ssh            OpenSSH 9.8p1 (CachyOS Linux x86_64 Hardened)
-80/tcp    open  http           Next.js 15 Edge Router (Sub-millisecond SSR)
-443/tcp   open  ssl/https      Cloudflare Zero-Trust Edge Gateway (TLS 1.3)
-3000/tcp  open  react-ui       TypeScript / Tailwind CSS Cyber Interface
-5432/tcp  open  postgresql     Neon Serverless Distributed PostgreSQL
-6379/tcp  open  redis          Redis Clustered In-Memory Vector Cache
-8000/tcp  open  fastapi        Python 3.13 Async High-Throughput REST & WebSockets
-8080/tcp  open  ai-swarm-rpc   RuVector HNSW Vector Search & SPARC Multi-Agent Hub
+<a href="https://github.com/ArrafiNurHafiz">
+  <img src="https://raw.githubusercontent.com/ArrafiNurHafiz/ArrafiNurHafiz/main/branding/nmap-recon-hud.svg" width="100%" alt="Nmap Recon HUD Scanning Radar" />
+</a>
 
-Aggressive OS guesses: Linux 7.2.2 CachyOS (99%), Tailored Kernel BORE (99%)
-No vulnerabilities found: 0 CVEs detected in active production mesh.
-```
+</div>
 
 ---
 
@@ -97,35 +77,13 @@ No vulnerabilities found: 0 CVEs detected in active production mesh.
 
 ### 🧬 DISASSEMBLY & SHELLCODE INJECTION
 
-```assembly
-; ==============================================================================
-; ARRAFI KERNEL PAYLOAD: PRODUCTION EXECUTION VECTOR
-; Target: x86_64 Linux 7.2.2 | Security: Non-Executable Stack Hardened
-; ==============================================================================
+<div align="center">
 
-section .text
-global _start
+<a href="https://github.com/ArrafiNurHafiz">
+  <img src="https://raw.githubusercontent.com/ArrafiNurHafiz/ArrafiNurHafiz/main/branding/disassembly-hud.svg" width="100%" alt="GDB Disassembly HUD Vector" />
+</a>
 
-_start:
-    xor     rax, rax                ; Clear accumulator
-    push    rax                     ; Null terminate string
-    mov     rdi, 0x69617261796973   ; "amal_jariyah"
-    push    rdi
-    mov     rsi, rsp                ; Pointer to purpose
-    mov     rdx, 0x1337             ; Elite latency index
-
-.deploy_stack:
-    mov     r8,  "TypeScript"       ; Frontend core
-    mov     r9,  "Python/FastAPI"   ; High-speed backend
-    mov     r10, "Rust/Engine"      ; Low-level safety
-    mov     r11, "Neon/Postgres"    ; Serverless database
-    mov     r12, "RuVector/HNSW"    ; 150x vector retrieval
-
-.loop_forever:
-    inc     rax                     ; Increment delivered impact
-    nop                             ; Continuous passive monitoring
-    jmp     .loop_forever           ; Run 24/7/365
-```
+</div>
 
 ---
 

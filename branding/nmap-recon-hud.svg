@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 320" width="100%" height="100%">
+  <defs>
+    <!-- Background -->
+    <radialGradient id="nmap-bg" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#031408"/>
+      <stop offset="60%" stop-color="#020803"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+
+    <!-- CRT Scanlines -->
+    <pattern id="nmap-scanlines" width="100" height="3" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100" y2="0" stroke="#000000" stroke-width="1" opacity="0.4"/>
+    </pattern>
+
+    <style>
+      @keyframes radar-scan {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes blink-row {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+      }
+      @keyframes ping-radar {
+        0% { r: 5; opacity: 0.9; }
+        100% { r: 42; opacity: 0; }
+      }
+      @keyframes pulse-border {
+        0%, 100% { stroke-opacity: 0.3; }
+        50% { stroke-opacity: 0.85; }
+      }
+
+      .nmap-font {
+        font-family: 'Courier New', 'Fira Code', monospace;
+      }
+      .port-active {
+        fill: #00ff41;
+        font-weight: bold;
+      }
+      .port-service {
+        fill: #86efac;
+      }
+      .port-version {
+        fill: #e2e8f0;
+      }
+      .radar-sweep {
+        transform-origin: 755px 75px;
+        animation: radar-scan 4s linear infinite;
+      }
+      .radar-wave {
+        animation: ping-radar 2.5s ease-out infinite;
+      }
+      .hud-frame {
+        animation: pulse-border 3.5s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect width="850" height="320" rx="10" fill="url(#nmap-bg)" stroke="#00ff41" stroke-width="1.6" class="hud-frame"/>
+
+  <!-- Corner Brackets -->
+  <g stroke="#00ff41" stroke-width="2" fill="none">
+    <path d="M 12 28 L 12 12 L 28 12" />
+    <path d="M 822 12 L 838 12 L 838 28" />
+    <path d="M 12 292 L 12 308 L 28 308" />
+    <path d="M 822 308 L 838 308 L 838 292" />
+  </g>
+
+  <!-- Header Command Bar -->
+  <g class="nmap-font">
+    <text x="24" y="28" fill="#00ff41" font-size="11" font-weight="900">> nmap -sV -sC -T4 --target=production.arrafi.network</text>
+    <text x="560" y="28" fill="#00f2fe" font-size="10" font-weight="bold">[RECON_LATENCY: 0.12ms]</text>
+  </g>
+  <line x1="16" y1="36" x2="834" y2="36" stroke="#00ff41" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Target Radar HUD (Top Right) -->
+  <g>
+    <circle cx="755" cy="75" r="40" fill="#021a0a" stroke="#00ff41" stroke-width="1" opacity="0.6"/>
+    <circle cx="755" cy="75" r="25" fill="none" stroke="#00ff41" stroke-width="0.6" stroke-dasharray="3, 3" opacity="0.4"/>
+    <circle cx="755" cy="75" r="10" fill="none" stroke="#00ff41" stroke-width="0.6" opacity="0.4"/>
+    <line x1="715" y1="75" x2="795" y2="75" stroke="#00ff41" stroke-width="0.6" opacity="0.4"/>
+    <line x1="755" y1="35" x2="755" y2="115" stroke="#00ff41" stroke-width="0.6" opacity="0.4"/>
+    <circle cx="755" cy="75" r="5" fill="#00ff41" class="radar-wave"/>
+    <!-- Sweeper Needle -->
+    <line x1="755" y1="75" x2="755" y2="35" stroke="#00f2fe" stroke-width="1.8" class="radar-sweep"/>
+    <text x="755" y="128" text-anchor="middle" fill="#00ff41" font-family="'Courier New', monospace" font-size="8.5" font-weight="bold">TARGET ACQUIRED</text>
+  </g>
+
+  <!-- Port Table Headers -->
+  <g class="nmap-font" font-size="10" font-weight="900" fill="#00f2fe">
+    <text x="28" y="58">PORT</text>
+    <text x="105" y="58">STATE</text>
+    <text x="180" y="58">SERVICE</text>
+    <text x="295" y="58">TARGET VERSION &amp; ARCHITECTURE</text>
+  </g>
+  <line x1="24" y1="64" x2="685" y2="64" stroke="#00ff41" stroke-width="0.6" opacity="0.4"/>
+
+  <!-- Port Rows -->
+  <g class="nmap-font" font-size="10.5">
+    <!-- Row 1 -->
+    <text x="28" y="82" class="port-active">22/tcp</text>
+    <text x="105" y="82" fill="#00ff41">open</text>
+    <text x="180" y="82" class="port-service">ssh</text>
+    <text x="295" y="82" class="port-version">OpenSSH 9.8p1 (CachyOS Linux x86_64 Hardened)</text>
+
+    <!-- Row 2 -->
+    <text x="28" y="103" class="port-active">80/tcp</text>
+    <text x="105" y="103" fill="#00ff41">open</text>
+    <text x="180" y="103" class="port-service">http-edge</text>
+    <text x="295" y="103" class="port-version">Next.js 15 Edge SSR • Sub-Millisecond Gateway</text>
+
+    <!-- Row 3 -->
+    <text x="28" y="124" class="port-active">443/tcp</text>
+    <text x="105" y="124" fill="#00ff41">open</text>
+    <text x="180" y="124" class="port-service">https-tls</text>
+    <text x="295" y="124" class="port-version">Cloudflare Zero-Trust Edge • OWASP API Hardened</text>
+
+    <!-- Row 4 -->
+    <text x="28" y="145" class="port-active">3000/tcp</text>
+    <text x="105" y="145" fill="#00ff41">open</text>
+    <text x="180" y="145" class="port-service">react-ui</text>
+    <text x="295" y="145" class="port-version">TypeScript / Vite / Tailwind Cyber UI Components</text>
+
+    <!-- Row 5 -->
+    <text x="28" y="166" class="port-active">5432/tcp</text>
+    <text x="105" y="166" fill="#00ff41">open</text>
+    <text x="180" y="166" class="port-service">postgresql</text>
+    <text x="295" y="166" class="port-version">Neon Serverless PostgreSQL • Distributed Branching</text>
+
+    <!-- Row 6 -->
+    <text x="28" y="187" class="port-active">6379/tcp</text>
+    <text x="105" y="187" fill="#00ff41">open</text>
+    <text x="180" y="187" class="port-service">redis-cache</text>
+    <text x="295" y="187" class="port-version">Clustered In-Memory Vector &amp; Session Store</text>
+
+    <!-- Row 7 -->
+    <text x="28" y="208" class="port-active">8000/tcp</text>
+    <text x="105" y="208" fill="#00ff41">open</text>
+    <text x="180" y="208" class="port-service">fastapi</text>
+    <text x="295" y="208" class="port-version">Python 3.13 Async High-Throughput REST Engine</text>
+
+    <!-- Row 8 -->
+    <text x="28" y="229" class="port-active">8080/tcp</text>
+    <text x="105" y="229" fill="#00ff41">open</text>
+    <text x="180" y="229" class="port-service">swarm-rpc</text>
+    <text x="295" y="229" class="port-version">RuVector HNSW Vector Search • SPARC Multi-Agent Hub</text>
+  </g>
+
+  <!-- Bottom Scan Summary Footer -->
+  <line x1="16" y1="250" x2="834" y2="250" stroke="#00ff41" stroke-width="0.8" opacity="0.5"/>
+  <g class="nmap-font" font-size="10">
+    <text x="28" y="272" fill="#00ff41" font-weight="bold">> SCAN COMPLETED: 8 Ports Open • 0 Vulnerabilities • 100% Integrity</text>
+    <text x="28" y="292" fill="#86efac">> OS GUESS: Linux 7.2.2 CachyOS (99%) • Non-Executable Stack Enabled</text>
+    <text x="590" y="282" fill="#00f2fe" font-weight="bold">[SYSTEM ENFORCEMENT: ACTIVE]</text>
+  </g>
+
+  <!-- CRT Scanlines -->
+  <rect width="850" height="320" fill="url(#nmap-scanlines)" pointer-events="none"/>
+</svg>

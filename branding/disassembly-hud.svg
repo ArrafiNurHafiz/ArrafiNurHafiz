@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 250" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="asm-bg" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#021406"/>
+      <stop offset="60%" stop-color="#010903"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+
+    <!-- Scanline Pattern -->
+    <pattern id="asm-scanlines" width="100" height="3" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100" y2="0" stroke="#000000" stroke-width="1" opacity="0.45"/>
+    </pattern>
+
+    <style>
+      @keyframes cursor-blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      @keyframes inject-glow {
+        0%, 100% { fill-opacity: 0.9; }
+        50% { fill-opacity: 1; }
+      }
+      @keyframes step-highlight {
+        0%, 100% { stroke-opacity: 0.3; }
+        50% { stroke-opacity: 0.8; }
+      }
+
+      .asm-font {
+        font-family: 'Courier New', 'Fira Code', monospace;
+      }
+      .asm-label {
+        fill: #00f2fe;
+        font-weight: 900;
+      }
+      .asm-op {
+        fill: #00ff41;
+        font-weight: bold;
+      }
+      .asm-reg {
+        fill: #e2e8f0;
+      }
+      .asm-comment {
+        fill: #86efac;
+      }
+      .asm-cursor {
+        animation: cursor-blink 1s step-start infinite;
+      }
+      .asm-box {
+        animation: step-highlight 3s infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect width="850" height="250" rx="10" fill="url(#asm-bg)" stroke="#00ff41" stroke-width="1.6" class="asm-box"/>
+
+  <!-- Corner Brackets -->
+  <g stroke="#00ff41" stroke-width="2" fill="none">
+    <path d="M 12 28 L 12 12 L 28 12" />
+    <path d="M 822 12 L 838 12 L 838 28" />
+    <path d="M 12 222 L 12 238 L 28 238" />
+    <path d="M 822 238 L 838 238 L 838 222" />
+  </g>
+
+  <!-- Header Tool Bar -->
+  <g class="asm-font">
+    <text x="24" y="28" fill="#00ff41" font-size="11" font-weight="900">> gdb-peda$ disassemble /r _arrafi_production_vector</text>
+    <text x="590" y="28" fill="#00f2fe" font-size="10" font-weight="bold">[STACK: NON-EXEC • ASLR: HARD]</text>
+  </g>
+  <line x1="16" y1="36" x2="834" y2="36" stroke="#00ff41" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Assembly Code Body -->
+  <g class="asm-font" font-size="11">
+    <!-- Line 1 -->
+    <text x="28" y="60" fill="#64748b">0x7fff0100:</text>
+    <text x="130" y="60" class="asm-op">xor</text>
+    <text x="200" y="60" class="asm-reg">rax, rax</text>
+    <text x="400" y="60" class="asm-comment">; Clear error accumulator [ZERO REGRESSION]</text>
+
+    <!-- Line 2 -->
+    <text x="28" y="82" fill="#64748b">0x7fff0103:</text>
+    <text x="130" y="82" class="asm-op">mov</text>
+    <text x="200" y="82" class="asm-reg">rdi, 0x69617261796973</text>
+    <text x="400" y="82" class="asm-comment">; Push "amal_jariyah" purpose pointer</text>
+
+    <!-- Line 3 -->
+    <text x="28" y="104" fill="#64748b">0x7fff010a:</text>
+    <text x="130" y="104" class="asm-op">mov</text>
+    <text x="200" y="104" class="asm-reg">r8,  0x54797065536372</text>
+    <text x="400" y="104" class="asm-comment">; Register: TypeScript &amp; Next.js 15 UI</text>
+
+    <!-- Line 4 -->
+    <text x="28" y="126" fill="#64748b">0x7fff0111:</text>
+    <text x="130" y="126" class="asm-op">mov</text>
+    <text x="200" y="126" class="asm-reg">r9,  0x507974686f6e33</text>
+    <text x="400" y="126" class="asm-comment">; Register: Python FastAPI &amp; Rust Engine</text>
+
+    <!-- Line 5 -->
+    <text x="28" y="148" fill="#64748b">0x7fff0118:</text>
+    <text x="130" y="148" class="asm-op">mov</text>
+    <text x="200" y="148" class="asm-reg">r10, 0x5275566563746f</text>
+    <text x="400" y="148" class="asm-comment">; Register: RuVector HNSW High-Dimensional Vector DB</text>
+
+    <!-- Line 6 -->
+    <text x="28" y="170" fill="#64748b">0x7fff011f:</text>
+    <text x="130" y="170" class="asm-op">call</text>
+    <text x="200" y="170" class="asm-label">_deploy_sharia_swarms</text>
+    <text x="400" y="170" class="asm-comment">; Execute Islamic Fintech &amp; Multi-Agent Mesh</text>
+
+    <!-- Line 7 -->
+    <text x="28" y="192" fill="#64748b">0x7fff0124:</text>
+    <text x="130" y="192" class="asm-op">jmp</text>
+    <text x="200" y="192" class="asm-label">.continuous_shipping</text>
+    <text x="400" y="192" class="asm-comment">; Infinite Loop: 24/7 Perpetual Impact Generation</text>
+  </g>
+
+  <!-- Bottom Command Status -->
+  <line x1="16" y1="208" x2="834" y2="208" stroke="#00ff41" stroke-width="0.8" opacity="0.5"/>
+  <g class="asm-font" font-size="10">
+    <text x="28" y="228" fill="#00ff41" font-weight="bold">gdb-peda$ continue</text>
+    <rect x="155" y="217" width="7" height="13" fill="#00ff41" class="asm-cursor"/>
+    <text x="590" y="228" fill="#86efac">[INSTRUCTION POINTER: ACTIVE]</text>
+  </g>
+
+  <!-- Scanline Overlay -->
+  <rect width="850" height="250" fill="url(#asm-scanlines)" pointer-events="none"/>
+</svg>
