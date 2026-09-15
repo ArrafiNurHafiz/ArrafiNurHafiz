@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="hud-bg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#041208"/>
+      <stop offset="60%" stop-color="#020804"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="neon-green" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="neon-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Scanline Pattern -->
+    <pattern id="hud-scanlines" width="100" height="3" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100" y2="0" stroke="#000000" stroke-width="1" opacity="0.4"/>
+    </pattern>
+
+    <style>
+      @keyframes pulse-link {
+        0%, 100% { stroke-opacity: 0.25; stroke-dashoffset: 0; }
+        50% { stroke-opacity: 0.9; stroke-dashoffset: -20; }
+      }
+      @keyframes node-glow {
+        0%, 100% { fill-opacity: 0.08; stroke-opacity: 0.5; }
+        50% { fill-opacity: 0.2; stroke-opacity: 1; }
+      }
+      @keyframes ping-dot {
+        0% { r: 3; opacity: 1; }
+        50% { r: 6; opacity: 0.4; }
+        100% { r: 3; opacity: 1; }
+      }
+      @keyframes sweep-radar {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes text-flicker {
+        0%, 100% { opacity: 1; }
+        3% { opacity: 0.7; }
+        6% { opacity: 1; }
+        70% { opacity: 0.85; }
+        72% { opacity: 1; }
+      }
+
+      .hud-text {
+        font-family: 'Courier New', 'Fira Code', monospace;
+        letter-spacing: 1px;
+      }
+      .link-line {
+        stroke: #00ff41;
+        stroke-width: 1.2;
+        stroke-dasharray: 4, 4;
+        animation: pulse-link 3s linear infinite;
+      }
+      .node-box {
+        fill: #00ff41;
+        stroke: #00ff41;
+        stroke-width: 1.2;
+        animation: node-glow 3s ease-in-out infinite;
+      }
+      .node-core {
+        fill: #00f2fe;
+        stroke: #00f2fe;
+        stroke-width: 1.5;
+        animation: node-glow 2.5s ease-in-out infinite;
+      }
+      .status-led {
+        animation: ping-dot 2s ease-in-out infinite;
+      }
+      .hud-flicker {
+        animation: text-flicker 5s infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- HUD Monitor Outer Frame -->
+  <rect width="850" height="360" rx="10" fill="url(#hud-bg)" stroke="#00ff41" stroke-width="1.6" opacity="0.95"/>
+  <rect width="842" height="352" x="4" y="4" rx="8" fill="none" stroke="#00ff41" stroke-width="0.6" stroke-dasharray="8, 4" opacity="0.4"/>
+
+  <!-- Corner Brackets -->
+  <g stroke="#00ff41" stroke-width="2" fill="none">
+    <path d="M 12 28 L 12 12 L 28 12" />
+    <path d="M 822 12 L 838 12 L 838 28" />
+    <path d="M 12 332 L 12 348 L 28 348" />
+    <path d="M 822 348 L 838 348 L 838 332" />
+  </g>
+
+  <!-- Header Info Bar -->
+  <g class="hud-text hud-flicker">
+    <text x="32" y="28" fill="#00ff41" font-size="11" font-weight="900">[NEURAL_COALITION // LEVEL_0_SWARM]</text>
+    <text x="360" y="28" fill="#00f2fe" font-size="10" font-weight="bold">PROTOCOL: SYNAPSE-MESH v4.8</text>
+    <text x="680" y="28" fill="#00ff41" font-size="11" font-weight="900">7/7 NODES ONLINE ●</text>
+  </g>
+  <line x1="16" y1="36" x2="834" y2="36" stroke="#00ff41" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Neural Mesh Connecting Lines -->
+  <g>
+    <!-- Center (Claude / Core) to Top & Bottom Row -->
+    <line x1="425" y1="110" x2="160" y2="110" class="link-line"/>
+    <line x1="425" y1="110" x2="690" y2="110" class="link-line"/>
+    <line x1="425" y1="135" x2="120" y2="245" class="link-line"/>
+    <line x1="425" y1="135" x2="320" y2="245" class="link-line"/>
+    <line x1="425" y1="135" x2="530" y2="245" class="link-line"/>
+    <line x1="425" y1="135" x2="730" y2="245" class="link-line"/>
+
+    <!-- Cross links -->
+    <line x1="160" y1="135" x2="120" y2="245" class="link-line" opacity="0.4"/>
+    <line x1="690" y1="135" x2="730" y2="245" class="link-line" opacity="0.4"/>
+  </g>
+
+  <!-- ==================== ROW 1: PRIMARY TRIAD ==================== -->
+
+  <!-- NODE 1: GPT-4o / o1 -->
+  <g transform="translate(45, 65)">
+    <rect width="230" height="90" rx="6" class="node-box" filter="url(#neon-green)"/>
+    <rect width="230" height="90" rx="6" fill="#031006" opacity="0.85"/>
+    <rect width="230" height="90" rx="6" fill="none" stroke="#00ff41" stroke-width="1.2"/>
+    <!-- Node Header -->
+    <circle cx="18" cy="20" r="4" fill="#00ff41" class="status-led"/>
+    <text x="32" y="24" fill="#00ff41" class="hud-text" font-size="14" font-weight="900">GPT-4o / o1</text>
+    <text x="180" y="22" fill="#86efac" class="hud-text" font-size="9">[LINKED]</text>
+    <line x1="10" y1="34" x2="220" y2="34" stroke="#00ff41" stroke-width="0.6" opacity="0.4"/>
+    <text x="14" y="52" fill="#cbd5e1" class="hud-text" font-size="10">PROVIDER: OpenAI Enterprise</text>
+    <text x="14" y="68" fill="#86efac" class="hud-text" font-size="10">ROLE: Multimodal &amp; Synthesis</text>
+    <text x="14" y="82" fill="#00ff41" class="hud-text" font-size="9">LATENCY: 0.18ms • STREAM: SYNC</text>
+  </g>
+
+  <!-- NODE 2: CLAUDE 3.5 / 5 (CORE COMMAND) -->
+  <g transform="translate(310, 55)">
+    <rect width="230" height="110" rx="6" class="node-core" filter="url(#neon-cyan)"/>
+    <rect width="230" height="110" rx="6" fill="#021518" opacity="0.9"/>
+    <rect width="230" height="110" rx="6" fill="none" stroke="#00f2fe" stroke-width="1.8"/>
+    <!-- Badge Ribbons -->
+    <circle cx="18" cy="22" r="5" fill="#00f2fe" class="status-led"/>
+    <text x="32" y="26" fill="#00f2fe" class="hud-text" font-size="15" font-weight="900">CLAUDE [CORE LEAD]</text>
+    <text x="175" y="24" fill="#22d3ee" class="hud-text" font-size="9">[PRIMARY]</text>
+    <line x1="10" y1="36" x2="220" y2="36" stroke="#00f2fe" stroke-width="0.8" opacity="0.6"/>
+    <text x="14" y="54" fill="#ffffff" class="hud-text" font-size="10" font-weight="bold">PROVIDER: Anthropic Nexus</text>
+    <text x="14" y="72" fill="#22d3ee" class="hud-text" font-size="10">ROLE: Master Swarm Orchestrator</text>
+    <text x="14" y="88" fill="#67e8f9" class="hud-text" font-size="10">ENGINE: SPARC · RuVector HNSW</text>
+    <text x="14" y="103" fill="#00f2fe" class="hud-text" font-size="9" font-weight="bold">LATENCY: 0.04ms • STATE: COMMAND</text>
+  </g>
+
+  <!-- NODE 3: DEEPSEEK-R1 -->
+  <g transform="translate(575, 65)">
+    <rect width="230" height="90" rx="6" class="node-box" filter="url(#neon-green)"/>
+    <rect width="230" height="90" rx="6" fill="#031006" opacity="0.85"/>
+    <rect width="230" height="90" rx="6" fill="none" stroke="#00ff41" stroke-width="1.2"/>
+    <!-- Node Header -->
+    <circle cx="18" cy="20" r="4" fill="#00ff41" class="status-led"/>
+    <text x="32" y="24" fill="#00ff41" class="hud-text" font-size="14" font-weight="900">DEEPSEEK-R1</text>
+    <text x="180" y="22" fill="#86efac" class="hud-text" font-size="9">[LINKED]</text>
+    <line x1="10" y1="34" x2="220" y2="34" stroke="#00ff41" stroke-width="0.6" opacity="0.4"/>
+    <text x="14" y="52" fill="#cbd5e1" class="hud-text" font-size="10">PROVIDER: DeepSeek AI</text>
+    <text x="14" y="68" fill="#86efac" class="hud-text" font-size="10">ROLE: Deep Math &amp; AST Logic</text>
+    <text x="14" y="82" fill="#00ff41" class="hud-text" font-size="9">LATENCY: 0.22ms • STREAM: SYNC</text>
+  </g>
+
+  <!-- ==================== ROW 2: TACTICAL QUAD ==================== -->
+
+  <!-- NODE 4: CURSOR -->
+  <g transform="translate(25, 205)">
+    <rect width="185" height="85" rx="5" class="node-box"/>
+    <rect width="185" height="85" rx="5" fill="#031006" opacity="0.85"/>
+    <rect width="185" height="85" rx="5" fill="none" stroke="#00ff41" stroke-width="1"/>
+    <circle cx="14" cy="18" r="3.5" fill="#00ff41" class="status-led"/>
+    <text x="26" y="22" fill="#00ff41" class="hud-text" font-size="12" font-weight="bold">CURSOR AI</text>
+    <line x1="8" y1="30" x2="177" y2="30" stroke="#00ff41" stroke-width="0.5" opacity="0.4"/>
+    <text x="10" y="46" fill="#cbd5e1" class="hud-text" font-size="9.5">ROLE: Pair Cognition</text>
+    <text x="10" y="60" fill="#86efac" class="hud-text" font-size="9.5">SPEC: Zero-Friction IDE</text>
+    <text x="10" y="74" fill="#00ff41" class="hud-text" font-size="8.5">LATENCY: 0.08ms [SYNC]</text>
+  </g>
+
+  <!-- NODE 5: KIMI AI -->
+  <g transform="translate(230, 205)">
+    <rect width="185" height="85" rx="5" class="node-box"/>
+    <rect width="185" height="85" rx="5" fill="#031006" opacity="0.85"/>
+    <rect width="185" height="85" rx="5" fill="none" stroke="#00ff41" stroke-width="1"/>
+    <circle cx="14" cy="18" r="3.5" fill="#00ff41" class="status-led"/>
+    <text x="26" y="22" fill="#00ff41" class="hud-text" font-size="12" font-weight="bold">KIMI AI</text>
+    <line x1="8" y1="30" x2="177" y2="30" stroke="#00ff41" stroke-width="0.5" opacity="0.4"/>
+    <text x="10" y="46" fill="#cbd5e1" class="hud-text" font-size="9.5">ROLE: Infinite Context</text>
+    <text x="10" y="60" fill="#86efac" class="hud-text" font-size="9.5">SPEC: 2M+ Token Parser</text>
+    <text x="10" y="74" fill="#00ff41" class="hud-text" font-size="8.5">LATENCY: 0.31ms [SYNC]</text>
+  </g>
+
+  <!-- NODE 6: HERMES 3 -->
+  <g transform="translate(435, 205)">
+    <rect width="185" height="85" rx="5" class="node-box"/>
+    <rect width="185" height="85" rx="5" fill="#031006" opacity="0.85"/>
+    <rect width="185" height="85" rx="5" fill="none" stroke="#00ff41" stroke-width="1"/>
+    <circle cx="14" cy="18" r="3.5" fill="#00ff41" class="status-led"/>
+    <text x="26" y="22" fill="#00ff41" class="hud-text" font-size="12" font-weight="bold">HERMES 3</text>
+    <line x1="8" y1="30" x2="177" y2="30" stroke="#00ff41" stroke-width="0.5" opacity="0.4"/>
+    <text x="10" y="46" fill="#cbd5e1" class="hud-text" font-size="9.5">ROLE: Autonomous Agent</text>
+    <text x="10" y="60" fill="#86efac" class="hud-text" font-size="9.5">SPEC: Nous Research Hub</text>
+    <text x="10" y="74" fill="#00ff41" class="hud-text" font-size="8.5">LATENCY: 0.15ms [SYNC]</text>
+  </g>
+
+  <!-- NODE 7: ANTIGRAVITY -->
+  <g transform="translate(640, 205)">
+    <rect width="185" height="85" rx="5" class="node-box"/>
+    <rect width="185" height="85" rx="5" fill="#031006" opacity="0.85"/>
+    <rect width="185" height="85" rx="5" fill="none" stroke="#00ff41" stroke-width="1"/>
+    <circle cx="14" cy="18" r="3.5" fill="#00ff41" class="status-led"/>
+    <text x="26" y="22" fill="#00ff41" class="hud-text" font-size="12" font-weight="bold">ANTIGRAVITY</text>
+    <line x1="8" y1="30" x2="177" y2="30" stroke="#00ff41" stroke-width="0.5" opacity="0.4"/>
+    <text x="10" y="46" fill="#cbd5e1" class="hud-text" font-size="9.5">ROLE: Quantum Logic</text>
+    <text x="10" y="60" fill="#86efac" class="hud-text" font-size="9.5">SPEC: Hardware Acceleration</text>
+    <text x="10" y="74" fill="#00ff41" class="hud-text" font-size="8.5">LATENCY: 0.02ms [SYNC]</text>
+  </g>
+
+  <!-- Footer Matrix Status Bar -->
+  <line x1="16" y1="315" x2="834" y2="315" stroke="#00ff41" stroke-width="0.8" opacity="0.5"/>
+  <g class="hud-text">
+    <text x="32" y="338" fill="#00ff41" font-size="10" font-weight="bold">> MESH CONVERGENCE: 100%</text>
+    <text x="310" y="338" fill="#86efac" font-size="10">> FAULT TOLERANCE: BYZANTINE SAFE</text>
+    <text x="650" y="338" fill="#00f2fe" font-size="10" font-weight="bold">> DISTRIBUTED CONSENSUS: ACTIVE</text>
+  </g>
+
+  <!-- Overlay Scanlines -->
+  <rect width="850" height="360" fill="url(#hud-scanlines)" pointer-events="none"/>
+</svg>

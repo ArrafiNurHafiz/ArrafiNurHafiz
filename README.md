@@ -87,27 +87,9 @@ No vulnerabilities found: 0 CVEs detected in active production mesh.
 
 <div align="center">
 
-```
-[+] ESTABLISHED QUANTUM NEURAL LINKS WITH COGNITIVE PARTNERS:
-```
-
-<table border="0" align="center">
-  <tr>
-    <td align="center">
-      <img src="https://img.shields.io/badge/CLAUDE-ANTHROPIC%20%E2%80%A2%20ORCHESTRATION-00FF41?style=for-the-badge&logo=anthropic&logoColor=000000&labelColor=000000" alt="Claude" />
-      <img src="https://img.shields.io/badge/GPT--4o%20%2F%20O1-OPENAI%20%E2%80%A2%20MULTIMODAL-00FF41?style=for-the-badge&logo=openai&logoColor=000000&labelColor=000000" alt="GPT" />
-      <img src="https://img.shields.io/badge/DEEPSEEK--R1-DEEPSEEK%20%E2%80%A2%20REASONING-00FF41?style=for-the-badge&logo=deepseek&logoColor=000000&labelColor=000000" alt="DeepSeek" />
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="https://img.shields.io/badge/CURSOR-AI%20IDE%20%E2%80%A2%20PAIR%20COGNITION-00FF41?style=for-the-badge&logo=cursor&logoColor=000000&labelColor=000000" alt="Cursor" />
-      <img src="https://img.shields.io/badge/KIMI%20AI-MOONSHOT%20AI%20%E2%80%A2%20LONG%20CONTEXT-00FF41?style=for-the-badge&logo=robot&logoColor=000000&labelColor=000000" alt="Kimi" />
-      <img src="https://img.shields.io/badge/HERMES%203-NOUS%20RESEARCH%20%E2%80%A2%20SYNTHETIC%20AI-00FF41?style=for-the-badge&logo=apachespark&logoColor=000000&labelColor=000000" alt="Hermes" />
-      <img src="https://img.shields.io/badge/ANTIGRAVITY-QUANTUM%20LOGIC%20%E2%80%A2%20ACCELERATOR-00FF41?style=for-the-badge&logo=proton&logoColor=000000&labelColor=000000" alt="Antigravity" />
-    </td>
-  </tr>
-</table>
+<a href="https://github.com/ArrafiNurHafiz">
+  <img src="https://raw.githubusercontent.com/ArrafiNurHafiz/ArrafiNurHafiz/main/branding/ai-neural-grid.svg" width="100%" alt="Synthetic AI Coalition Neural Swarm HUD" />
+</a>
 
 </div>
 
