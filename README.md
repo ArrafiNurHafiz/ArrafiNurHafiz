@@ -39,18 +39,19 @@
 
 ### ⚡ Cybernetic Terminal Core
 
-```ansi
- [1;36m┌──( [1;35marrafi㉿quantum-core [1;36m)-[ [1;37m~/systems/production [1;36m] [0m
- [1;36m└─$ [1;32m sysinfo --deep-scan --verbose [0m
+```bash
+arrafi@quantum-core:~/systems/production $ sysinfo --deep-scan --verbose
 
- [1;34m        ███████╗ [1;36m  Operator   [1;30m: [0m Arrafi Nur Hafiz
- [1;34m        ██╔════╝ [1;36m  Kernel     [1;30m: [0m Linux 7.2.2 CachyOS (x86_64 Optimized)
- [1;34m        ███████╗ [1;36m  Shell      [1;30m: [0m fish / zsh / bash [ANSI Color Engine]
- [1;34m        ╚════██║ [1;36m  Discipline [1;30m: [0m Distributed Architect & AI Systems Specialist
- [1;34m        ███████║ [1;36m  Ecosystem  [1;30m: [0m TypeScript · Next.js · Python · Rust · PHP · Neon
- [1;34m        ╚══════╝ [1;36m  AI Engine  [1;30m: [0m Claude API · RuVector HNSW · Agent Swarms
- [1;34m   [1;35m[SYSTEM ARTIFACT] [1;36m  Purpose    [1;30m: [1;32mSoftware as Amal Jariyah (صدقة جارية) [0m
- [1;34m   [1;33m[EXECUTION STATE] [1;36m  Cycle      [1;30m: [1;35mContinuous Production Deployment 24/7 [0m
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  OPERATOR    : Arrafi Nur Hafiz                                             │
+│  KERNEL      : Linux 7.2.2 CachyOS (x86_64 Optimized)                       │
+│  SHELL       : fish / zsh / bash                                            │
+│  DISCIPLINE  : Full-Stack Architect & AI Systems Specialist                │
+│  ECOSYSTEM   : TypeScript · Next.js · Python · Rust · PHP · Neon            │
+│  AI ENGINE   : Claude API · RuVector HNSW · Agent Swarms                    │
+│  PURPOSE     : Software as Amal Jariyah (صدقة جارية)                         │
+│  STATUS      : ● ONLINE — 24/7 Continuous Execution                         │
+└─────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
