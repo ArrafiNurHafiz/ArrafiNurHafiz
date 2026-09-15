@@ -1,16 +1,9 @@
 <div align="center">
 
-```
- ▄▄▄       ██▀███   ██▀███   ▄▄▄       ███████ ██▓
-▒████▄    ▓██ ▒ ██▒▓██ ▒ ██▒▒████▄     ██ ▒ ▒  ▓██▒
-▒██  ▀█▄  ▓██ ░▄█ ▒▓██ ░▄█ ▒▒██  ▀█▄ ▓███████▒ ▒██▒
-░██▄▄▄▄██ ▒██▀▀█▄  ▒██▀▀█▄  ░██▄▄▄▄██  ██▒ ░  ░ ░██░
- ▓█   ▓██▒░██▓ ▒██▒░██▓ ▒██▒ ▓█   ▓██▒ ▒█████▒  ░██░
- ▒▒   ▓▒█░░ ▒▓ ░▒▓░░ ▒▓ ░▒▓░ ▒▒   ▓▒█░ ░ ▒   ░  ░▓  
-  ▒   ▒▒ ░  ░▒ ░ ▒░  ░▒ ░ ▒░  ▒   ▒▒ ░  ░ ▒ ░   ▒ ░
-  ░   ▒     ░░   ░   ░░   ░   ░   ▒     ░ ░     ▒ ░
-      ░  ░   ░        ░           ░  ░    ░ ░   ░  
-```
+<!-- ==================== HACKER GLITCH CRT ANIMATED BANNER ==================== -->
+<a href="https://github.com/ArrafiNurHafiz">
+  <img src="https://raw.githubusercontent.com/ArrafiNurHafiz/ArrafiNurHafiz/main/branding/hacker-glitch-banner.svg" width="100%" alt="Cyberpunk Hacker Glitch ASCII Banner" />
+</a>
 
 <!-- Dynamic Hacker Prompt Stream -->
 <p align="center">

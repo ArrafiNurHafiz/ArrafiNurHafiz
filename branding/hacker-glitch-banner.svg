@@ -1,0 +1,235 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 230" width="100%" height="100%">
+  <defs>
+    <!-- CRT Screen Gradient Background -->
+    <radialGradient id="crt-glow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#05150a"/>
+      <stop offset="60%" stop-color="#020804"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+
+    <!-- CRT Scanline Pattern -->
+    <pattern id="scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100" y2="0" stroke="#000000" stroke-width="1.5" opacity="0.45"/>
+    </pattern>
+
+    <!-- Neon Glow Filter -->
+    <filter id="matrix-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes glitch-anim {
+        0%, 100% {
+          transform: translate(0, 0);
+          clip-path: inset(0 0 0 0);
+        }
+        7% {
+          transform: translate(-3px, 1.5px);
+          clip-path: inset(10% 0 65% 0);
+        }
+        14% {
+          transform: translate(3px, -1.5px);
+          clip-path: inset(45% 0 25% 0);
+        }
+        21% {
+          transform: translate(0, 0);
+          clip-path: inset(0 0 0 0);
+        }
+        48% {
+          transform: translate(0, 0);
+          clip-path: inset(0 0 0 0);
+        }
+        52% {
+          transform: translate(-4px, -1px);
+          clip-path: inset(70% 0 10% 0);
+        }
+        56% {
+          transform: translate(4px, 2px);
+          clip-path: inset(20% 0 50% 0);
+        }
+        60% {
+          transform: translate(0, 0);
+          clip-path: inset(0 0 0 0);
+        }
+        82% {
+          transform: translate(2px, -2px);
+          clip-path: inset(80% 0 5% 0);
+        }
+        86% {
+          transform: translate(-2px, 2px);
+          clip-path: inset(15% 0 60% 0);
+        }
+        90% {
+          transform: translate(0, 0);
+          clip-path: inset(0 0 0 0);
+        }
+      }
+
+      @keyframes glitch-cyan {
+        0%, 100% {
+          transform: translate(0, 0);
+          opacity: 0;
+        }
+        7%, 52%, 82% {
+          transform: translate(4px, -2px);
+          opacity: 0.85;
+          clip-path: inset(25% 0 45% 0);
+        }
+        14%, 56%, 86% {
+          transform: translate(-4px, 2px);
+          opacity: 0.75;
+          clip-path: inset(60% 0 15% 0);
+        }
+        21%, 60%, 90% {
+          transform: translate(0, 0);
+          opacity: 0;
+        }
+      }
+
+      @keyframes glitch-red {
+        0%, 100% {
+          transform: translate(0, 0);
+          opacity: 0;
+        }
+        7%, 52%, 82% {
+          transform: translate(-4px, 2px);
+          opacity: 0.85;
+          clip-path: inset(50% 0 20% 0);
+        }
+        14%, 56%, 86% {
+          transform: translate(4px, -2px);
+          opacity: 0.75;
+          clip-path: inset(10% 0 70% 0);
+        }
+        21%, 60%, 90% {
+          transform: translate(0, 0);
+          opacity: 0;
+        }
+      }
+
+      @keyframes scan-sweep {
+        0% { transform: translateY(-100%); }
+        100% { transform: translateY(250%); }
+      }
+
+      @keyframes radar-flicker {
+        0%, 100% { opacity: 0.96; }
+        3% { opacity: 0.7; }
+        6% { opacity: 0.98; }
+        42% { opacity: 0.85; }
+        44% { opacity: 1; }
+        78% { opacity: 0.65; }
+        81% { opacity: 0.96; }
+      }
+
+      .terminal-frame {
+        animation: radar-flicker 4s infinite;
+      }
+      .ascii-base {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 900;
+        font-size: 15px;
+        white-space: pre;
+        fill: #00ff41;
+        filter: url(#matrix-glow);
+        animation: glitch-anim 3.5s infinite;
+      }
+      .ascii-cyan {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 900;
+        font-size: 15px;
+        white-space: pre;
+        fill: #00f2fe;
+        animation: glitch-cyan 3.5s infinite;
+      }
+      .ascii-red {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 900;
+        font-size: 15px;
+        white-space: pre;
+        fill: #ff0055;
+        animation: glitch-red 3.5s infinite;
+      }
+      .scan-beam {
+        animation: scan-sweep 6s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- CRT Monitor Background -->
+  <rect width="820" height="230" rx="14" fill="url(#crt-glow)" stroke="#00ff41" stroke-width="1.8" opacity="0.95"/>
+
+  <!-- CRT Corner Brackets & HUD Status -->
+  <g stroke="#00ff41" stroke-width="2" fill="none">
+    <!-- Top Left -->
+    <path d="M 12 30 L 12 12 L 30 12" />
+    <!-- Top Right -->
+    <path d="M 790 12 L 808 12 L 808 30" />
+    <!-- Bottom Left -->
+    <path d="M 12 200 L 12 218 L 30 218" />
+    <!-- Bottom Right -->
+    <path d="M 790 218 L 808 218 L 808 200" />
+  </g>
+
+  <!-- HUD Labels -->
+  <text x="36" y="24" fill="#00ff41" font-family="'Courier New', monospace" font-size="11" font-weight="bold" letter-spacing="2">[MAINFRAME // ROOT_ACCESS_ACTIVE]</text>
+  <text x="630" y="24" fill="#00ff41" font-family="'Courier New', monospace" font-size="11" font-weight="bold" letter-spacing="2">SYS_ID: ARRAFI-0x1337</text>
+
+  <!-- Glitch Shadow: Red/Pink Layer -->
+  <g class="terminal-frame">
+    <text x="75" y="62" class="ascii-red">
+ ▄▄▄       ██▀███   ██▀███   ▄▄▄       ███████ ██▓
+▒████▄    ▓██ ▒ ██▒▓██ ▒ ██▒▒████▄     ██ ▒ ▒  ▓██▒
+▒██  ▀█▄  ▓██ ░▄█ ▒▓██ ░▄█ ▒▒██  ▀█▄ ▓███████▒ ▒██▒
+░██▄▄▄▄██ ▒██▀▀█▄  ▒██▀▀█▄  ░██▄▄▄▄██  ██▒ ░  ░ ░██░
+ ▓█   ▓██▒░██▓ ▒██▒░██▓ ▒██▒ ▓█   ▓██▒ ▒█████▒  ░██░
+ ▒▒   ▓▒█░░ ▒▓ ░▒▓░░ ▒▓ ░▒▓░ ▒▒   ▓▒█░ ░ ▒   ░  ░▓
+  ▒   ▒▒ ░  ░▒ ░ ▒░  ░▒ ░ ▒░  ▒   ▒▒ ░  ░ ▒ ░   ▒ ░
+  ░   ▒     ░░   ░   ░░   ░   ░   ▒     ░ ░     ▒ ░
+      ░  ░   ░        ░           ░  ░    ░ ░   ░
+    </text>
+
+    <!-- Glitch Shadow: Cyan Layer -->
+    <text x="75" y="62" class="ascii-cyan">
+ ▄▄▄       ██▀███   ██▀███   ▄▄▄       ███████ ██▓
+▒████▄    ▓██ ▒ ██▒▓██ ▒ ██▒▒████▄     ██ ▒ ▒  ▓██▒
+▒██  ▀█▄  ▓██ ░▄█ ▒▓██ ░▄█ ▒▒██  ▀█▄ ▓███████▒ ▒██▒
+░██▄▄▄▄██ ▒██▀▀█▄  ▒██▀▀█▄  ░██▄▄▄▄██  ██▒ ░  ░ ░██░
+ ▓█   ▓██▒░██▓ ▒██▒░██▓ ▒██▒ ▓█   ▓██▒ ▒█████▒  ░██░
+ ▒▒   ▓▒█░░ ▒▓ ░▒▓░░ ▒▓ ░▒▓░ ▒▒   ▓▒█░ ░ ▒   ░  ░▓
+  ▒   ▒▒ ░  ░▒ ░ ▒░  ░▒ ░ ▒░  ▒   ▒▒ ░  ░ ▒ ░   ▒ ░
+  ░   ▒     ░░   ░   ░░   ░   ░   ▒     ░ ░     ▒ ░
+      ░  ░   ░        ░           ░  ░    ░ ░   ░
+    </text>
+
+    <!-- Main Green Neon ASCII Text -->
+    <text x="75" y="62" class="ascii-base">
+ ▄▄▄       ██▀███   ██▀███   ▄▄▄       ███████ ██▓
+▒████▄    ▓██ ▒ ██▒▓██ ▒ ██▒▒████▄     ██ ▒ ▒  ▓██▒
+▒██  ▀█▄  ▓██ ░▄█ ▒▓██ ░▄█ ▒▒██  ▀█▄ ▓███████▒ ▒██▒
+░██▄▄▄▄██ ▒██▀▀█▄  ▒██▀▀█▄  ░██▄▄▄▄██  ██▒ ░  ░ ░██░
+ ▓█   ▓██▒░██▓ ▒██▒░██▓ ▒██▒ ▓█   ▓██▒ ▒█████▒  ░██░
+ ▒▒   ▓▒█░░ ▒▓ ░▒▓░░ ▒▓ ░▒▓░ ▒▒   ▓▒█░ ░ ▒   ░  ░▓
+  ▒   ▒▒ ░  ░▒ ░ ▒░  ░▒ ░ ▒░  ▒   ▒▒ ░  ░ ▒ ░   ▒ ░
+  ░   ▒     ░░   ░   ░░   ░   ░   ▒     ░ ░     ▒ ░
+      ░  ░   ░        ░           ░  ░    ░ ░   ░
+    </text>
+  </g>
+
+  <!-- Bottom Terminal Tagline -->
+  <text x="50%" y="206" text-anchor="middle" fill="#00ff41" font-family="'Courier New', monospace" font-size="12" font-weight="bold" letter-spacing="4">FULL-STACK ARCHITECT • AI AGENT SWARMS • ISLAMIC FINTECH</text>
+
+  <!-- Scanline Overlay -->
+  <rect width="820" height="230" fill="url(#scanlines)" pointer-events="none"/>
+
+  <!-- Moving Laser Scan Beam -->
+  <g class="scan-beam" pointer-events="none">
+    <rect x="0" y="0" width="820" height="15" fill="url(#crt-glow)" opacity="0.25"/>
+    <line x1="0" y1="15" x2="820" y2="15" stroke="#00ff41" stroke-width="1.2" opacity="0.6"/>
+  </g>
+</svg>
