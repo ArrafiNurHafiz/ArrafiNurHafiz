@@ -1,20 +1,20 @@
 <div align="center">
 
-<!-- ==================== HERO CAPSULE BANNER ==================== -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050811,20:0f172a,40:1e1b4b,60:312e81,80:4338ca,100:06b6d4&height=280&section=header&text=ARRAFI%20NUR%20HAFIZ&fontSize=58&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=%E2%9A%A1%20FULL-STACK%20ARCHITECT%20%E2%80%A2%20AI%20SYSTEMS%20%E2%80%A2%20ISLAMIC%20FINTECH%20%E2%9A%A1&descAlignY=60&descAlign=50&descSize=16" width="100%" alt="Arrafi Header Banner" />
+<!-- ==================== CYBERPUNK HEADER BANNER ==================== -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050811,20:0a0f1d,40:1e1b4b,60:3730a3,80:4f46e5,100:00f2fe&height=290&section=header&text=ARRAFI%20NUR%20HAFIZ&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=%E2%97%86%20FULL-STACK%20ARCHITECT%20%E2%80%A2%20AI%20SWARMS%20%E2%80%A2%20ISLAMIC%20FINTECH%20%E2%97%86&descAlignY=58&descAlign=50&descSize=16" width="100%" alt="Arrafi Header Banner" />
 
-<!-- ==================== ANIMATED DYNAMIC TYPING ==================== -->
+<!-- ==================== ANIMATED MULTI-COLOR TYPING ==================== -->
 <p align="center">
   <a href="https://github.com/ArrafiNurHafiz">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=22&pause=1200&color=00F2FE&center=true&vCenter=true&width=860&lines=%E2%9A%A1+Architecting+Ultra-Low+Latency+Distributed+Systems;%F0%9F%A4%96+Engineering+Autonomous+AI+Swarms+%26+Vector+RAG;%F0%9F%95%8C+Building+Islamic+Fintech+%7C+Software+as+Amal+Jariyah;%F0%9F%9B%A1%EF%B8%8F+Zero-Trust+Security+%E2%80%A2+CachyOS+Linux+Kernel+%E2%80%A2+TypeScript+%26+Rust" alt="Dynamic Typing Tagline" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=22&pause=1200&color=00F2FE&center=true&vCenter=true&width=860&lines=%E2%9A%A1+Architecting+High-Performance+Distributed+Systems;%F0%9F%A4%96+Engineering+Autonomous+AI+Swarms+%26+Vector+RAG;%F0%9F%95%8C+Building+Islamic+Fintech+%7C+Software+as+Amal+Jariyah;%F0%9F%9B%A1%EF%B8%8F+Zero-Trust+Security+%E2%80%A2+CachyOS+Linux+Kernel+%E2%80%A2+TypeScript+%26+Rust" alt="Dynamic Typing Tagline" />
   </a>
 </p>
 
-<!-- ==================== STATUS MATRIX HUD ==================== -->
+<!-- ==================== LIVE TELEMETRY MATRIX HUD ==================== -->
 <p align="center">
-  <img src="https://img.shields.io/badge/CORE%20STATUS-ONLINE%20%E2%97%8F-10B981?style=for-the-badge&logo=statuspage&logoColor=white&labelColor=050811" alt="Core Status" />
-  <img src="https://img.shields.io/badge/SECURITY-HARDENED%20%F0%9F%9B%A1%EF%B8%8F-6366F1?style=for-the-badge&logo=shield&logoColor=white&labelColor=050811" alt="Security Hardened" />
-  <img src="https://img.shields.io/badge/KERNEL-CACHYOS%20x86__64-06B6D4?style=for-the-badge&logo=linux&logoColor=white&labelColor=050811" alt="Kernel" />
+  <img src="https://img.shields.io/badge/CORE%20STATUS-ONLINE%20%E2%97%8F-00F2FE?style=for-the-badge&logo=statuspage&logoColor=050811&labelColor=050811" alt="Core Status" />
+  <img src="https://img.shields.io/badge/SECURITY-ZERO%20TRUST%20%F0%9F%9B%A1%EF%B8%8F-6366F1?style=for-the-badge&logo=shield&logoColor=white&labelColor=050811" alt="Security" />
+  <img src="https://img.shields.io/badge/LATENCY-SUB--MS%20%E2%9A%A1-10B981?style=for-the-badge&logo=speedtest&logoColor=10B981&labelColor=050811" alt="Latency" />
   <img src="https://komarev.com/ghpvc/?username=ArrafiNurHafiz&color=8B5CF6&style=for-the-badge&label=PROFILE%20VIEWS" alt="Profile Views" />
 </p>
 
@@ -22,7 +22,7 @@
 
 ---
 
-### 📖 Spiritual Root & Intent
+### 📖 Spiritual Anchor & Creed
 
 <div align="center">
 
@@ -37,33 +37,51 @@
 
 ---
 
-### ⚡ System Identity & Configuration
+### ⚡ Cybernetic Terminal Core
+
+```ansi
+ [1;36m┌──( [1;35marrafi㉿quantum-core [1;36m)-[ [1;37m~/systems/production [1;36m] [0m
+ [1;36m└─$ [1;32m sysinfo --deep-scan --verbose [0m
+
+ [1;34m        ███████╗ [1;36m  Operator   [1;30m: [0m Arrafi Nur Hafiz
+ [1;34m        ██╔════╝ [1;36m  Kernel     [1;30m: [0m Linux 7.2.2 CachyOS (x86_64 Optimized)
+ [1;34m        ███████╗ [1;36m  Shell      [1;30m: [0m fish / zsh / bash [ANSI Color Engine]
+ [1;34m        ╚════██║ [1;36m  Discipline [1;30m: [0m Distributed Architect & AI Systems Specialist
+ [1;34m        ███████║ [1;36m  Ecosystem  [1;30m: [0m TypeScript · Next.js · Python · Rust · PHP · Neon
+ [1;34m        ╚══════╝ [1;36m  AI Engine  [1;30m: [0m Claude API · RuVector HNSW · Agent Swarms
+ [1;34m   [1;35m[SYSTEM ARTIFACT] [1;36m  Purpose    [1;30m: [1;32mSoftware as Amal Jariyah (صدقة جارية) [0m
+ [1;34m   [1;33m[EXECUTION STATE] [1;36m  Cycle      [1;30m: [1;35mContinuous Production Deployment 24/7 [0m
+```
+
+---
+
+### 🎛️ Developer State Matrix: `ArrafiNurHafiz.config.ts`
 
 ```typescript
 /**
  * @file ArrafiNurHafiz.config.ts
- * @description Core Developer State & Production Identity
+ * @description Immutable Developer Archetype & Production Stack
  */
 
 export const DeveloperProfile = {
-  codename    : "Arrafi Nur Hafiz",
-  identity    : "Full-Stack Architect & AI Systems Engineer",
-  ethos       : "Code with Intention • Software as Amal Jariyah (صدقة جارية)",
-  systemState : "Production Ready // Continuous High-Velocity Execution",
-  
-  stack: {
-    frontend  : ["TypeScript", "React", "Next.js 15", "TailwindCSS", "Vite"],
-    backend   : ["Python (FastAPI)", "Rust", "PHP (Laravel)", "Node.js", "Bun"],
-    database  : ["PostgreSQL", "Neon Serverless", "Supabase", "Redis Clustered"],
-    ai_swarm  : ["Claude API", "Agentic Topologies", "RuVector HNSW", "Graph RAG"],
-    devops    : ["Docker Containers", "Bare-Metal VPS", "Linux CachyOS", "Cloudflare"]
+  codename     : "Arrafi Nur Hafiz",
+  identity     : "Full-Stack Architect & AI Systems Engineer",
+  philosophy   : "Build with Intention • Code as Perpetual Impact",
+  systemState  : "Production Ready // Continuous High-Velocity Execution",
+
+  arsenal: {
+    frontend   : ["TypeScript", "React", "Next.js 15", "TailwindCSS", "Vite"],
+    backend    : ["Python (FastAPI)", "Rust", "PHP (Laravel)", "Node.js", "Bun"],
+    database   : ["PostgreSQL", "Neon Serverless", "Supabase", "Redis Clustered"],
+    ai_agents  : ["Claude API", "Multi-Agent Swarms", "RuVector HNSW", "Graph RAG"],
+    devops     : ["Docker Containers", "Bare-Metal VPS", "Linux CachyOS", "Cloudflare"]
   },
 
-  principles: [
-    "Simplicity over Complexity",
-    "Security-by-Default (Zero-Trust & OWASP)",
-    "Sub-millisecond Latency & Clean Architecture",
-    "Ethical & Sharia-Compliant Digital Infrastructure"
+  immutableLaws: [
+    "01. Simplicity over unnecessary abstraction (YAGNI & Pure Precision)",
+    "02. Zero-Trust Security by default (OWASP Top 10 & Dynamic Hardening)",
+    "03. Sub-millisecond latency & deterministic execution",
+    "04. Technology rooted in ethical, Sharia-compliant digital foundations"
   ]
 } as const;
 ```
@@ -76,7 +94,7 @@ export const DeveloperProfile = {
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=typescript,javascript,react,nextjs,tailwind,vite,python,rust,php,laravel,fastapi,nodejs,bun,postgres,supabase,redis,prisma,docker,linux,git,github,neovim,postman,figma&perline=12&theme=dark" alt="Interactive Skill Icons" />
+    <img src="https://skillicons.dev/icons?i=typescript,javascript,react,nextjs,tailwind,vite,python,rust,php,laravel,fastapi,nodejs,bun,postgres,supabase,redis,prisma,docker,linux,git,github,neovim,postman,figma&perline=12&theme=dark" alt="Skill Icons Matrix" />
   </a>
 </p>
 
@@ -95,6 +113,19 @@ export const DeveloperProfile = {
     </td>
   </tr>
 </table>
+
+</div>
+
+---
+
+### 🎧 Ambient Engineering State
+
+<div align="center">
+
+<!-- Soundwave & Frequency Equalizer Widget -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=18&pause=1000&color=00F2FE&center=true&vCenter=true&width=700&lines=%E2%96%AE%E2%96%AE%E2%96%AE%E2%96%AE%E2%96%AE+FREQUENCY+LOCKED%3A+Deep+Focus+%E2%80%A2+Neural+Flow+State+%E2%96%AE%E2%96%AE%E2%96%AE%E2%96%AE%E2%96%AE;%E2%96%AE%E2%96%AE%E2%96%AE%E2%96%AE%E2%96%AE+ACTIVE+STREAM%3A+High-Velocity+Coding+%E2%80%A2+Zero+Distraction+%E2%96%AE%E2%96%AE%E2%96%AE%E2%96%AE%E2%96%AE;%E2%96%AE%E2%96%AE%E2%96%AE%E2%96%AE%E2%96%AE+SYS+OUTPUT%3A+100%25+Pure+Engineering+Efficiency+%E2%96%AE%E2%96%AE%E2%96%AE%E2%96%AE%E2%96%AE" alt="Equalizer Status" />
+</p>
 
 </div>
 
@@ -167,6 +198,6 @@ export const DeveloperProfile = {
 <br>
 
 <!-- Footer Wave Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,20:4338ca,40:312e81,60:1e1b4b,80:0f172a,100:050811&height=160&section=footer&text=%D8%A7%D9%84%D9%92%D8%AD%D9%8E%D9%85%D9%92%D8%AF%D9%8F%20%D9%84%D9%90%D9%84%D9%8E%D9%91%D9%87%D9%90%20%D8%B1%D9%8E%D8%A8%D9%90%D9%91%20%D8%A7%D9%84%D9%92%D8%B9%D9%8E%D8%A7%D9%84%D9%8E%D9%85%D9%90%D9%8A%D9%86%D9%8E&fontSize=26&fontColor=ffffff&animation=fadeIn&fontAlignY=66" width="100%" alt="Footer Wave Banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f2fe,20:4f46e5,40:3730a3,60:1e1b4b,80:0a0f1d,100:050811&height=160&section=footer&text=%D8%A7%D9%84%D9%92%D8%AD%D9%8E%D9%85%D9%92%D8%AF%D9%8F%20%D9%84%D9%90%D9%84%D9%8E%D9%91%D9%87%D9%90%20%D8%B1%D9%8E%D8%A8%D9%90%D9%91%20%D8%A7%D9%84%D9%92%D8%B9%D9%8E%D8%A7%D9%84%D9%8E%D9%85%D9%90%D9%8A%D9%86%D9%8E&fontSize=26&fontColor=ffffff&animation=fadeIn&fontAlignY=66" width="100%" alt="Footer Wave Banner" />
 
 </div>
