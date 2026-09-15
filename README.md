@@ -26,16 +26,13 @@
 
 ### 📡 BOOT SEQUENCE & KERNEL LOGS
 
-```bash
-[  0.000000] Linux version 7.2.2-1-cachyos (gcc-14.2.1) #1 SMP PREEMPT_DYNAMIC
-[  0.001420] CPU0: BORE (Burst-Oriented Response Enhancer) CPU Scheduler v5.4.3
-[  0.012040] Memory: 64GB DDR5 / Sub-Millisecond Quantum Access
-[  0.045100] [OK] Initializing Zero-Trust Security Architecture (OWASP / AST)
-[  0.102450] [OK] Mounted RuVector HNSW High-Dimensional Vector DB (150x Indexing)
-[  0.184200] [OK] Synchronizing Islamic Fintech Engine & Autonomous Akad Validator
-[  0.250100] [OK] Connected to 7 Synthetic AI Nodes: Claude, GPT-4o, DeepSeek, Cursor, Kimi, Hermes, Antigravity
-[  0.301200] [SYSTEM ALERT] All subsystems operational. User authenticated as: Arrafi Nur Hafiz (UID 0)
-```
+<div align="center">
+
+<a href="https://github.com/ArrafiNurHafiz">
+  <img src="https://raw.githubusercontent.com/ArrafiNurHafiz/ArrafiNurHafiz/main/branding/kernel-boot-hud.svg" width="100%" alt="Kernel Boot Sequence Dmesg HUD" />
+</a>
+
+</div>
 
 ---
 
