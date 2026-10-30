@@ -4,35 +4,48 @@
     <radialGradient id="stack-bg" cx="50%" cy="40%" r="80%">
       <stop offset="0%" stop-color="#243328"/>
       <stop offset="70%" stop-color="#1b291f"/>
-      <stop offset="100%" stop-color="#131e16"/>
+      <stop offset="100%" stop-color="#121d15"/>
     </radialGradient>
 
     <!-- Card Background -->
     <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#283d2e"/>
-      <stop offset="100%" stop-color="#1f2f23"/>
+      <stop offset="100%" stop-color="#1c2b20"/>
     </linearGradient>
 
     <style>
       @keyframes soft-pulse-dot {
         0%, 100% { opacity: 0.9; transform: scale(1); }
-        50% { opacity: 0.4; transform: scale(0.85); }
+        50% { opacity: 0.35; transform: scale(0.8); }
       }
-      .font-sans {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      @keyframes dash-flow {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -32; }
       }
-      .font-mono {
-        font-family: 'JetBrains Mono', 'Fira Code', monospace;
+      @keyframes hover-card {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-3px); }
       }
+
+      .font-sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
+      .font-mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+      
       .pulse-dot {
-        animation: soft-pulse-dot 2.5s ease-in-out infinite;
+        animation: soft-pulse-dot 2.2s ease-in-out infinite;
         transform-origin: center;
       }
+      .anim-dash {
+        stroke-dasharray: 8 4;
+        animation: dash-flow 3s linear infinite;
+      }
+      .card-1 { animation: hover-card 4s ease-in-out infinite; }
+      .card-2 { animation: hover-card 4s ease-in-out infinite 1.3s; }
+      .card-3 { animation: hover-card 4s ease-in-out infinite 2.6s; }
     </style>
   </defs>
 
   <!-- Container -->
-  <rect width="880" height="270" rx="16" fill="url(#stack-bg)" stroke="#344e41" stroke-width="1.4"/>
+  <rect width="880" height="270" rx="16" fill="url(#stack-bg)" stroke="#344e41" stroke-width="1.5"/>
 
   <!-- Header Title -->
   <g transform="translate(32, 28)">
@@ -40,15 +53,16 @@
       ENGINEERING ECOSYSTEM // CORE DISCIPLINES
     </text>
     <text y="22" class="font-sans" font-size="16" font-weight="700" fill="#f4f1de">
-      Crafting Modern Web Solutions from Concept to Deployment
+      Modern Web Craftsmanship: Clean Architecture &amp; Fluid Interfaces
     </text>
     <line x1="0" y1="34" x2="816" y2="34" stroke="#2d4233" stroke-width="1"/>
   </g>
 
   <!-- Three Columns Cards -->
   <!-- Column 1: Client & Interface -->
-  <g transform="translate(32, 78)">
-    <rect width="258" height="166" rx="12" fill="url(#card-grad)" stroke="#3d5a44" stroke-width="1"/>
+  <g transform="translate(32, 78)" class="card-1">
+    <rect width="258" height="166" rx="12" fill="url(#card-grad)" stroke="#3d5a44" stroke-width="1.2"/>
+    <rect width="258" height="166" rx="12" fill="none" stroke="#a3c9a8" stroke-width="1" class="anim-dash" opacity="0.6"/>
     
     <!-- Top Pill -->
     <rect x="16" y="14" width="226" height="26" rx="7" fill="#1b291f" stroke="#4a6b52" stroke-width="0.8"/>
@@ -69,9 +83,10 @@
     </g>
   </g>
 
-  <!-- Column 2: Backend & Server -->
-  <g transform="translate(311, 78)">
-    <rect width="258" height="166" rx="12" fill="url(#card-grad)" stroke="#3d5a44" stroke-width="1"/>
+  <!-- Column 2: Backend & Logic -->
+  <g transform="translate(311, 78)" class="card-2">
+    <rect width="258" height="166" rx="12" fill="url(#card-grad)" stroke="#3d5a44" stroke-width="1.2"/>
+    <rect width="258" height="166" rx="12" fill="none" stroke="#f7d6c8" stroke-width="1" class="anim-dash" opacity="0.6"/>
     
     <!-- Top Pill -->
     <rect x="16" y="14" width="226" height="26" rx="7" fill="#1b291f" stroke="#4a6b52" stroke-width="0.8"/>
@@ -88,13 +103,14 @@
 
       <!-- Bottom Status -->
       <rect x="0" y="86" width="226" height="18" rx="5" fill="#17241b"/>
-      <text x="113" y="99" class="font-mono" font-size="9" fill="#f7d6c8" text-anchor="middle">Focus: Clean Architecture &amp; Data Integrity</text>
+      <text x="113" y="99" class="font-mono" font-size="9" fill="#f7d6c8" text-anchor="middle">Focus: Clean Architecture &amp; Integrity</text>
     </g>
   </g>
 
-  <!-- Column 3: Data & Infrastructure -->
-  <g transform="translate(590, 78)">
-    <rect width="258" height="166" rx="12" fill="url(#card-grad)" stroke="#3d5a44" stroke-width="1"/>
+  <!-- Column 3: Data & Workbench -->
+  <g transform="translate(590, 78)" class="card-3">
+    <rect width="258" height="166" rx="12" fill="url(#card-grad)" stroke="#3d5a44" stroke-width="1.2"/>
+    <rect width="258" height="166" rx="12" fill="none" stroke="#ffeaa7" stroke-width="1" class="anim-dash" opacity="0.6"/>
     
     <!-- Top Pill -->
     <rect x="16" y="14" width="226" height="26" rx="7" fill="#1b291f" stroke="#4a6b52" stroke-width="0.8"/>
