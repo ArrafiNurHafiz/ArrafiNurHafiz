@@ -17,15 +17,12 @@
     </filter>
 
     <style>
-      @keyframes soft-pulse {
         0%, 100% { opacity: 0.92; filter: drop-shadow(0 0 4px #a3c9a8); }
         50% { opacity: 1; filter: drop-shadow(0 0 10px #c7efcf); }
       }
-      @keyframes float-leaf {
         0%, 100% { transform: rotate(0deg); }
         50% { transform: rotate(6deg); }
       }
-      @keyframes border-march {
         0% { stroke-dashoffset: 0; }
         100% { stroke-dashoffset: -40; }
       }
@@ -35,7 +32,7 @@
         font-size: 26px;
         font-weight: bold;
         fill: #c7efcf;
-        animation: soft-pulse 3.5s ease-in-out infinite;
+        
       }
       .text-trans {
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -51,33 +48,31 @@
         letter-spacing: 2px;
       }
       .leaf-icon-left {
-        transform-origin: 64px 90px;
-        animation: float-leaf 4s ease-in-out infinite;
+        
       }
       .leaf-icon-right {
-        transform-origin: 816px 90px;
-        animation: float-leaf 4s ease-in-out infinite 2s;
+        
       }
       .creed-border-anim {
         stroke-dasharray: 8 6;
-        animation: border-march 3s linear infinite;
+        
       }
     </style>
   </defs>
 
   <!-- Main Container -->
   <rect width="880" height="180" rx="16" fill="url(#matcha-creed-bg)" stroke="#3d5a44" stroke-width="1.4"/>
-  <rect width="880" height="180" rx="16" fill="none" stroke="#a3c9a8" stroke-width="1.2" opacity="0.6" class="creed-border-anim"/>
+  <rect width="880" height="180" rx="16" fill="none" stroke="#a3c9a8" stroke-width="1.2" opacity="0.6"/>
 
   <!-- Left Leaf Motif -->
-  <g class="leaf-icon-left">
+  <g>
     <circle cx="64" cy="90" r="20" fill="#1b291f" stroke="#3d5a44" stroke-width="1"/>
     <path d="M 56,98 Q 54,82 64,78 Q 74,82 72,98 Q 64,102 56,98 Z" fill="#7fa073"/>
     <line x1="64" y1="82" x2="64" y2="98" stroke="#f4f1de" stroke-width="0.8"/>
   </g>
 
   <!-- Right Leaf Motif -->
-  <g class="leaf-icon-right">
+  <g>
     <circle cx="816" cy="90" r="20" fill="#1b291f" stroke="#3d5a44" stroke-width="1"/>
     <path d="M 808,98 Q 806,82 816,78 Q 826,82 824,98 Q 816,102 808,98 Z" fill="#7fa073"/>
     <line x1="816" y1="82" x2="816" y2="98" stroke="#f4f1de" stroke-width="0.8"/>

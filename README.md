@@ -1,14 +1,14 @@
 <div align="center">
 
-<!-- ==================== CUTE MATCHA & CREAM DESK BANNER ==================== -->
+<!-- ==================== CUTE MATCHA & CREAM DESK BANNER (STATIC) ==================== -->
 <a href="https://github.com/ArrafiNurHafiz">
   <img src="https://raw.githubusercontent.com/ArrafiNurHafiz/ArrafiNurHafiz/main/branding/matcha-cute-banner.svg" width="100%" alt="Arrafi Nur Hafiz - Cozy Matcha Studio" />
 </a>
 
-<!-- Dynamic Typing Stream -->
+<!-- Clean Status Stream -->
 <p align="center">
   <a href="https://github.com/ArrafiNurHafiz">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=19&duration=3000&pause=800&color=A3C9A8&center=true&vCenter=true&width=840&lines=Crafting+thoughtful+full-stack+web+applications;S1+Information+Systems+student+and+software+developer;Primary+Stack:+TypeScript,+React,+Next.js,+Laravel;Building+software+as+perpetual+charity+(Amal+Jariyah);Cozy+matcha+studio:+learning,+building,+refining" alt="Typing Stream" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=19&pause=9999999&color=A3C9A8&center=true&vCenter=true&width=840&lines=Crafting+thoughtful+full-stack+web+applications" alt="Status" />
   </a>
 </p>
 
@@ -139,6 +139,6 @@ Building impactful, resilient software as perpetual charity (Amal Jariyah).
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:131e16,30:1b291f,65:283d2e,100:7fa073&height=150&section=footer&text=Alhamdulillah&fontSize=24&fontColor=f4f1de&animation=twinkling&fontAlignY=66" width="100%" alt="Footer Banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:131e16,30:1b291f,65:283d2e,100:7fa073&height=150&section=footer&text=Alhamdulillah&fontSize=24&fontColor=f4f1de&fontAlignY=66" width="100%" alt="Footer Banner" />
 
 </div>
