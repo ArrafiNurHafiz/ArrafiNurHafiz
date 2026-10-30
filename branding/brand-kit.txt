@@ -1,13 +1,16 @@
-ARRAFI HYPRLAND CATPPUCCIN MOCHA BRAND KIT
+ARRAFI MATCHA MINT & CREAM BRAND KIT
+Aesthetic: Cute, Cozy, Minimalist Studio (Zero Emojis)
 Colors:
-- Mauve: #cba6f7
-- Blue: #89b4fa
-- Sky / Cyan: #89dceb
-- Base: #1e1e2e
-- Mantle: #181825
-- Crust: #11111b
-- Text: #cdd6f4
-Fonts:
-- JetBrains Mono / Fira Code
-Compositor:
-- Hyprland (Wayland)
+- Matcha Green: #7fa073
+- Mint Soft: #a3c9a8
+- Mint Light: #c7efcf
+- Cream / Warm White: #f4f1de
+- Matcha Night Base: #1b291f
+- Matcha Deep Crust: #131e16
+- Soft Peach: #f7d6c8
+- Butter Cream: #ffeaa7
+Typography:
+- Sans: Inter / System UI
+- Mono: JetBrains Mono / Fira Code
+Focus:
+- Full-Stack Web Development & Software Engineering
