@@ -1,30 +1,31 @@
 <div align="center">
 
-<!-- ==================== HACKER GLITCH CRT ANIMATED BANNER ==================== -->
+<!-- ==================== HYPRLAND WAYLAND DESKTOP RICE ANIMATED BANNER ==================== -->
 <a href="https://github.com/ArrafiNurHafiz">
-  <img src="https://raw.githubusercontent.com/ArrafiNurHafiz/ArrafiNurHafiz/main/branding/hacker-glitch-banner.svg" width="100%" alt="Cyberpunk Hacker Glitch ASCII Banner" />
+  <img src="https://raw.githubusercontent.com/ArrafiNurHafiz/ArrafiNurHafiz/main/branding/hyprland-desktop-banner.svg" width="100%" alt="Hyprland Wayland Desktop Rice" />
 </a>
 
-<!-- Dynamic Hacker Prompt Stream -->
+<!-- Dynamic Wayland / Catppuccin Stream -->
 <p align="center">
   <a href="https://github.com/ArrafiNurHafiz">
-    <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=20&pause=800&color=00FF41&center=true&vCenter=true&width=860&lines=%3E+_STARTING+SYSTEM+EXPLOIT+DEFENSE+GRID...;%3E+SSH+SESSION%3A+root%40127.0.0.1%3A22+%5BAUTH_BYPASS_NULL%5D;%3E+AI_SWARM%3A+Deploying+autonomous+neural+mesh+agents...;%3E+SHARIA_FINTECH%3A+Executing+zero-interest+profit-share+engine...;%3E+SYS_STATUS%3A+All+firewall+layers+nominal+%5B100%25+UPTIME%5D" alt="Hacker Terminal Stream" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=19&pause=800&color=89DCEB&center=true&vCenter=true&width=860&lines=%3E+hyprctl+dispatch+workspace+1+%5BSECURITY_OPS%5D;%3E+AI_ENGINE%3A+9Router+mesh+active+on+127.0.0.1%3A20128;%3E+KERNEL%3A+CachyOS+Zen-Bore+7.3.0+%5BOVERCLOCK_STABLE%5D;%3E+MISSION%3A+Building+resilient+software+as+Amal+Jariyah;%3E+STATUS%3A+All+Wayland+compositor+layers+nominal+%5B165Hz%5D" alt="Hyprland Terminal Stream" />
   </a>
 </p>
 
-<!-- Live CRT Status Badges -->
+<!-- Live Catppuccin Mocha Status Badges -->
 <p align="center">
-  <img src="https://img.shields.io/badge/%E2%96%B6_ROOT_SHELL-UID_0_ACTIVE-00FF41?style=for-the-badge&logo=gnubash&logoColor=000000&labelColor=000000" alt="Root Shell" />
-  <img src="https://img.shields.io/badge/%E2%96%B6_KERNEL-CACHYOS_BORE-00FF41?style=for-the-badge&logo=linux&logoColor=00FF41&labelColor=000000" alt="Kernel" />
-  <img src="https://img.shields.io/badge/%E2%96%B6_CIPHER-AES_256_GCM-00FF41?style=for-the-badge&logo=kalilinux&logoColor=00FF41&labelColor=000000" alt="Cipher" />
-  <img src="https://komarev.com/ghpvc/?username=ArrafiNurHafiz&color=00FF41&style=for-the-badge&label=ACCESS_PROBES" alt="Access Count" />
+  <img src="https://img.shields.io/badge/%EF%A3%BF_COMPOSITOR-HYPRLAND_WAYLAND-cba6f7?style=for-the-badge&logo=wayland&logoColor=1e1e2e&labelColor=181825" alt="Compositor" />
+  <img src="https://img.shields.io/badge/%E2%96%B6_KERNEL-CACHYOS_BORE-89dceb?style=for-the-badge&logo=linux&logoColor=1e1e2e&labelColor=181825" alt="Kernel" />
+  <img src="https://img.shields.io/badge/%E2%96%B6_ROLE-RED_TEAM_%2F_APPSEC-a6e3a1?style=for-the-badge&logo=kalilinux&logoColor=1e1e2e&labelColor=181825" alt="Role" />
+  <img src="https://img.shields.io/badge/%E2%96%B6_THEME-CATPPUCCIN_MOCHA-f5c2e7?style=for-the-badge&logo=visualstudiocode&logoColor=1e1e2e&labelColor=181825" alt="Theme" />
+  <img src="https://komarev.com/ghpvc/?username=ArrafiNurHafiz&color=cba6f7&style=for-the-badge&label=ACCESS_PROBES" alt="Access Count" />
 </p>
 
 </div>
 
 ---
 
-### 📡 BOOT SEQUENCE & KERNEL LOGS
+### 📡 SYSTEM BOOT & KERNEL LOGS
 
 <div align="center">
 
@@ -48,7 +49,7 @@
 
 ---
 
-### 🌐 NMAP NETWORK RECON & TARGET SCAN
+### 🌐 NETWORK RECON & TARGET SURFACE
 
 <div align="center">
 
@@ -60,7 +61,7 @@
 
 ---
 
-### 🤖 SYNTHETIC AI COALITION & NEURAL PARTNERS
+### 🤖 SYNTHETIC AI COALITION & NEURAL SWARM
 
 <div align="center">
 
@@ -94,18 +95,18 @@
   </a>
 </p>
 
-<!-- Terminal Badges Matrix -->
+<!-- Catppuccin Terminal Badges Matrix -->
 <table border="0" align="center">
   <tr>
     <td align="center">
-      <img src="https://img.shields.io/badge/%5BEXPLOIT__UI%5D-TypeScript%20%7C%20React%20%7C%20Next.js-00FF41?style=for-the-badge&logo=react&logoColor=00FF41&labelColor=000000" />
-      <img src="https://img.shields.io/badge/%5BCORE__DAEMON%5D-Python%20%7C%20FastAPI%20%7C%20Rust%20%7C%20PHP-00FF41?style=for-the-badge&logo=fastapi&logoColor=00FF41&labelColor=000000" />
+      <img src="https://img.shields.io/badge/%5BEXPLOIT__UI%5D-TypeScript%20%7C%20React%20%7C%20Next.js-89b4fa?style=for-the-badge&logo=react&logoColor=89b4fa&labelColor=181825" />
+      <img src="https://img.shields.io/badge/%5BCORE__DAEMON%5D-Python%20%7C%20FastAPI%20%7C%20Rust%20%7C%20PHP-cba6f7?style=for-the-badge&logo=fastapi&logoColor=cba6f7&labelColor=181825" />
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="https://img.shields.io/badge/%5BNEURAL__NET%5D-Claude%20API%20%7C%20RuVector%20HNSW-00FF41?style=for-the-badge&logo=anthropic&logoColor=00FF41&labelColor=000000" />
-      <img src="https://img.shields.io/badge/%5BINFRA__VAULT%5D-Docker%20%7C%20Postgres%20%7C%20Redis%20%7C%20Linux-00FF41?style=for-the-badge&logo=docker&logoColor=00FF41&labelColor=000000" />
+      <img src="https://img.shields.io/badge/%5BNEURAL__NET%5D-9Router%20%7C%20HexStrike%20%7C%20Claude-89dceb?style=for-the-badge&logo=anthropic&logoColor=89dceb&labelColor=181825" />
+      <img src="https://img.shields.io/badge/%5BINFRA__VAULT%5D-Docker%20%7C%20Postgres%20%7C%20Redis%20%7C%20Linux-a6e3a1?style=for-the-badge&logo=docker&logoColor=a6e3a1&labelColor=181825" />
     </td>
   </tr>
 </table>
@@ -118,30 +119,30 @@
 
 <div align="center">
 
-<!-- Side-by-Side Green Phosphor Stats -->
+<!-- Side-by-Side Catppuccin Stats -->
 <table border="0" width="100%">
   <tr>
     <td width="50%" align="center">
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=ArrafiNurHafiz&show_icons=true&theme=dark&include_all_commits=true&count_private=true&border_color=00ff41&title_color=00FF41&icon_color=00ff41&text_color=00ff41&bg_color=000000&hide_border=false" width="100%" alt="Stats Matrix" />
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=ArrafiNurHafiz&show_icons=true&theme=catppuccin_mocha&include_all_commits=true&count_private=true&border_color=cba6f7&title_color=cba6f7&icon_color=89dceb&text_color=cdd6f4&bg_color=181825&hide_border=false" width="100%" alt="Stats Matrix" />
     </td>
     <td width="50%" align="center">
-      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=ArrafiNurHafiz&layout=compact&langs_count=8&theme=dark&border_color=00ff41&title_color=00FF41&text_color=00ff41&bg_color=000000&hide_border=false" width="100%" alt="Language Matrix" />
+      <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=ArrafiNurHafiz&layout=compact&langs_count=8&theme=catppuccin_mocha&border_color=cba6f7&title_color=cba6f7&text_color=cdd6f4&bg_color=181825&hide_border=false" width="100%" alt="Language Matrix" />
     </td>
   </tr>
 </table>
 
 <br>
 
-<!-- Streak Terminal HUD -->
+<!-- Streak Terminal HUD (Catppuccin Mocha) -->
 <a href="https://git.io/streak-stats">
-  <img src="https://streak-stats.demolab.com?user=ArrafiNurHafiz&theme=dark&border=00ff41&ring=00FF41&fire=00ff41&currStreakLabel=00FF41&sideLabels=00ff41&dates=00ff41&background=000000" width="98%" alt="Streak Log" />
+  <img src="https://streak-stats.demolab.com?user=ArrafiNurHafiz&theme=catppuccin_mocha&border=cba6f7&ring=cba6f7&fire=fab387&currStreakLabel=89dceb&sideLabels=cdd6f4&dates=a6adc8&background=181825" width="98%" alt="Streak Log" />
 </a>
 
 <br><br>
 
-<!-- Dynamic Matrix Cyber Grid -->
+<!-- Dynamic Catppuccin Git Activity Grid -->
 <a href="https://github.com/ArrafiNurHafiz">
-  <img src="https://ghchart.rshah.org/00ff41/ArrafiNurHafiz" width="100%" alt="Matrix Git Activity" />
+  <img src="https://ghchart.rshah.org/cba6f7/ArrafiNurHafiz" width="100%" alt="Git Activity Graph" />
 </a>
 
 </div>
@@ -154,15 +155,15 @@
 
 <p align="center">
   <a href="https://linkedin.com/in/ArrafiNurHafiz">
-    <img src="https://img.shields.io/badge/%5BSIGNAL__LINKEDIN%5D-ArrafiNurHafiz-00FF41?style=for-the-badge&logo=linkedin&logoColor=000000&labelColor=000000" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/%5BSIGNAL__LINKEDIN%5D-ArrafiNurHafiz-89b4fa?style=for-the-badge&logo=linkedin&logoColor=1e1e2e&labelColor=181825" alt="LinkedIn" />
   </a>
   &nbsp;
   <a href="https://instagram.com/ArrafiNurHafiz">
-    <img src="https://img.shields.io/badge/%5BSIGNAL__INSTA%5D-@ArrafiNurHafiz-00FF41?style=for-the-badge&logo=instagram&logoColor=000000&labelColor=000000" alt="Instagram" />
+    <img src="https://img.shields.io/badge/%5BSIGNAL__INSTA%5D-@ArrafiNurHafiz-f5c2e7?style=for-the-badge&logo=instagram&logoColor=1e1e2e&labelColor=181825" alt="Instagram" />
   </a>
   &nbsp;
   <a href="mailto:arrafinurhafiz@gmail.com">
-    <img src="https://img.shields.io/badge/%5BPGP__ENCRYPTED__MAIL%5D-arrafinurhafiz@gmail.com-00FF41?style=for-the-badge&logo=gmail&logoColor=000000&labelColor=000000" alt="Email" />
+    <img src="https://img.shields.io/badge/%5BPGP__ENCRYPTED__MAIL%5D-arrafinurhafiz@gmail.com-cba6f7?style=for-the-badge&logo=gmail&logoColor=1e1e2e&labelColor=181825" alt="Email" />
   </a>
 </p>
 
@@ -179,7 +180,7 @@ Building impactful, resilient software as perpetual charity (Amal Jariyah).
 
 <br>
 
-<!-- Hacker Terminal Footer Waving Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ff41,25:16a34a,50:14532d,75:052e16,100:000000&height=160&section=footer&text=%D8%A7%D9%84%D9%92%D8%AD%D9%8E%D9%85%D9%92%D8%AF%D9%8F%20%D9%84%D9%90%D9%84%D9%8E%D9%91%D9%87%D9%90%20%D8%B1%D9%8E%D8%A8%D9%90%D9%91%20%D8%A7%D9%84%D9%92%D8%AD%D9%8E%D8%A7%D9%84%D9%8E%D9%85%D9%90%D9%8A%D9%86%D9%8E&fontSize=26&fontColor=ffffff&animation=fadeIn&fontAlignY=66" width="100%" alt="Footer Banner" />
+<!-- Hyprland Catppuccin Mocha Waving Footer -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:181825,25:313244,50:585b70,75:cba6f7,100:89b4fa&height=160&section=footer&text=%D8%A7%D9%84%D9%92%D8%AD%D9%8E%D9%85%D9%92%D8%AF%D9%8F%20%D9%84%D9%90%D9%84%D9%8E%D9%91%D9%87%D9%90%20%D8%B1%D9%8E%D8%A8%D9%90%D9%91%20%D8%A7%D9%84%D9%92%D8%AD%D9%8E%D8%A7%D9%84%D9%8E%D9%85%D9%90%D9%8A%D9%86%D9%8E&fontSize=26&fontColor=cdd6f4&animation=fadeIn&fontAlignY=66" width="100%" alt="Footer Banner" />
 
 </div>

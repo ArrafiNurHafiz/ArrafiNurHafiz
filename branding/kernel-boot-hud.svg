@@ -2,14 +2,14 @@
   <defs>
     <!-- Background Gradient -->
     <radialGradient id="boot-bg" cx="50%" cy="50%" r="80%">
-      <stop offset="0%" stop-color="#021406"/>
-      <stop offset="65%" stop-color="#010903"/>
-      <stop offset="100%" stop-color="#000000"/>
+      <stop offset="0%" stop-color="#181825"/>
+      <stop offset="65%" stop-color="#11111b"/>
+      <stop offset="100%" stop-color="#11111b"/>
     </radialGradient>
 
     <!-- Scanline Pattern -->
     <pattern id="boot-scanlines" width="100" height="3" patternUnits="userSpaceOnUse">
-      <line x1="0" y1="0" x2="100" y2="0" stroke="#000000" stroke-width="1" opacity="0.4"/>
+      <line x1="0" y1="0" x2="100" y2="0" stroke="#11111b" stroke-width="1" opacity="0.4"/>
     </pattern>
 
     <style>
@@ -23,8 +23,8 @@
       @keyframes type-row-8 { 0%, 62% { opacity: 0; } 68% { opacity: 1; } }
 
       @keyframes led-blink {
-        0%, 100% { opacity: 1; fill: #00ff41; }
-        50% { opacity: 0.3; fill: #00ff41; }
+        0%, 100% { opacity: 1; fill: #cba6f7; }
+        50% { opacity: 0.3; fill: #cba6f7; }
       }
 
       @keyframes prompt-cursor {
@@ -47,11 +47,11 @@
         fill: #e2e8f0;
       }
       .ok-badge {
-        fill: #00ff41;
+        fill: #cba6f7;
         font-weight: bold;
       }
       .alert-badge {
-        fill: #00f2fe;
+        fill: #89dceb;
         font-weight: bold;
       }
       .r1 { animation: type-row-1 6s infinite; }
@@ -73,10 +73,10 @@
   </defs>
 
   <!-- Monitor Frame -->
-  <rect width="850" height="260" rx="10" fill="url(#boot-bg)" stroke="#00ff41" stroke-width="1.6" class="boot-box"/>
+  <rect width="850" height="260" rx="10" fill="url(#boot-bg)" stroke="#cba6f7" stroke-width="1.6" class="boot-box"/>
 
   <!-- Corner Brackets -->
-  <g stroke="#00ff41" stroke-width="2" fill="none">
+  <g stroke="#cba6f7" stroke-width="2" fill="none">
     <path d="M 12 28 L 12 12 L 28 12" />
     <path d="M 822 12 L 838 12 L 838 28" />
     <path d="M 12 232 L 12 248 L 28 248" />
@@ -85,18 +85,18 @@
 
   <!-- Header Tool Bar -->
   <g class="boot-font">
-    <circle cx="26" cy="24" r="4" fill="#00ff41" style="animation: led-blink 1.5s infinite;"/>
-    <text x="38" y="28" fill="#00ff41" font-size="11" font-weight="900">[TTY1 // KERNEL_INIT_STAGE_3]</text>
-    <text x="610" y="28" fill="#00f2fe" font-size="10" font-weight="bold">dmesg -T --level=info,alert</text>
+    <circle cx="26" cy="24" r="4" fill="#cba6f7" style="animation: led-blink 1.5s infinite;"/>
+    <text x="38" y="28" fill="#cba6f7" font-size="11" font-weight="900">[TTY1 // KERNEL_INIT_STAGE_3]</text>
+    <text x="610" y="28" fill="#89dceb" font-size="10" font-weight="bold">dmesg -T --level=info,alert</text>
   </g>
-  <line x1="16" y1="36" x2="834" y2="36" stroke="#00ff41" stroke-width="0.8" opacity="0.5"/>
+  <line x1="16" y1="36" x2="834" y2="36" stroke="#cba6f7" stroke-width="0.8" opacity="0.5"/>
 
   <!-- Boot Log Lines -->
   <g class="boot-font" font-size="10.8">
     <!-- Log 1 -->
     <g class="r1">
       <text x="24" y="58" class="ts-tag">[  0.000000]</text>
-      <text x="120" y="58" class="log-norm">Linux version 7.2.2-1-cachyos (gcc-14.2.1) #1 SMP PREEMPT_DYNAMIC</text>
+      <text x="120" y="58" class="log-norm">Linux version 7.3.0-4-cachyos-bore (gcc-14.2.1) #1 SMP PREEMPT_DYNAMIC</text>
     </g>
 
     <!-- Log 2 -->
@@ -143,16 +143,16 @@
     <g class="r8">
       <text x="24" y="212" class="ts-tag">[  0.301200]</text>
       <text x="120" y="212" class="alert-badge">[SYSTEM ALERT]</text>
-      <text x="225" y="212" class="log-norm">All subsystems operational. User authenticated: <tspan fill="#00ff41" font-weight="bold">Arrafi Nur Hafiz (UID 0)</tspan></text>
+      <text x="225" y="212" class="log-norm">All subsystems operational. User authenticated: <tspan fill="#cba6f7" font-weight="bold">Arrafi Nur Hafiz (UID 0)</tspan></text>
     </g>
   </g>
 
   <!-- Bottom Interactive Cursor -->
-  <line x1="16" y1="228" x2="834" y2="228" stroke="#00ff41" stroke-width="0.8" opacity="0.5"/>
+  <line x1="16" y1="228" x2="834" y2="228" stroke="#cba6f7" stroke-width="0.8" opacity="0.5"/>
   <g class="boot-font" font-size="10.5">
-    <text x="24" y="246" fill="#00ff41" font-weight="bold">root@cachyos:~#</text>
-    <rect x="145" y="236" width="7" height="12" fill="#00ff41" class="cursor"/>
-    <text x="610" y="246" fill="#86efac">[SYSTEM STATE: PRODUCTION READY]</text>
+    <text x="24" y="246" fill="#cba6f7" font-weight="bold">root@cachyos:~#</text>
+    <rect x="145" y="236" width="7" height="12" fill="#cba6f7" class="cursor"/>
+    <text x="610" y="246" fill="#b4befe">[SYSTEM STATE: PRODUCTION READY]</text>
   </g>
 
   <!-- CRT Scanlines -->

@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 180" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 190" width="100%" height="100%">
   <defs>
-    <!-- Background Gradient -->
+    <!-- Background Gradient (Catppuccin Mocha) -->
     <radialGradient id="creed-bg" cx="50%" cy="50%" r="75%">
-      <stop offset="0%" stop-color="#03160a"/>
-      <stop offset="65%" stop-color="#020904"/>
-      <stop offset="100%" stop-color="#000000"/>
+      <stop offset="0%" stop-color="#1e1e2e"/>
+      <stop offset="65%" stop-color="#181825"/>
+      <stop offset="100%" stop-color="#11111b"/>
     </radialGradient>
 
     <!-- Neon Glow Filter -->
@@ -12,51 +12,46 @@
       <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
-        <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
     <style>
       @keyframes holy-pulse {
-        0%, 100% { fill-opacity: 0.9; filter: drop-shadow(0 0 4px #00ff41); }
-        50% { fill-opacity: 1; filter: drop-shadow(0 0 12px #00ff66); }
+        0%, 100% { fill-opacity: 0.92; filter: drop-shadow(0 0 4px #89dceb); }
+        50% { fill-opacity: 1; filter: drop-shadow(0 0 14px #cba6f7); }
       }
       @keyframes border-glow {
         0%, 100% { stroke-opacity: 0.4; stroke-dashoffset: 0; }
-        50% { stroke-opacity: 0.9; stroke-dashoffset: -30; }
+        50% { stroke-opacity: 0.95; stroke-dashoffset: -30; }
       }
       @keyframes geom-rotate {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
-      }
-      @keyframes flicker-subtle {
-        0%, 100% { opacity: 0.95; }
-        50% { opacity: 0.8; }
       }
 
       .arabic-text {
         font-family: 'Amiri', 'Traditional Arabic', 'Scheherazade New', serif;
         font-size: 26px;
         font-weight: bold;
-        fill: #00ff66;
+        fill: #89dceb;
         animation: holy-pulse 4s ease-in-out infinite;
       }
       .translation-text {
-        font-family: 'Courier New', 'Fira Code', monospace;
+        font-family: 'JetBrains Mono', 'Fira Code', monospace;
         font-size: 13px;
-        fill: #a7f3d0;
-        letter-spacing: 1px;
+        fill: #cdd6f4;
+        letter-spacing: 0.5px;
       }
       .reference-text {
-        font-family: 'Courier New', 'Fira Code', monospace;
+        font-family: 'JetBrains Mono', 'Fira Code', monospace;
         font-size: 11px;
-        font-weight: 900;
-        fill: #00ff41;
+        font-weight: 800;
+        fill: #cba6f7;
         letter-spacing: 2px;
       }
       .hud-creed-line {
-        stroke: #00ff41;
+        stroke: #cba6f7;
         stroke-width: 1.2;
         stroke-dasharray: 6, 4;
         animation: border-glow 4s linear infinite;
@@ -69,45 +64,47 @@
   </defs>
 
   <!-- Frame Background -->
-  <rect width="850" height="180" rx="12" fill="url(#creed-bg)" stroke="#00ff41" stroke-width="1.6" opacity="0.95"/>
+  <rect width="880" height="190" rx="12" fill="url(#creed-bg)" stroke="#cba6f7" stroke-width="1.6" stroke-opacity="0.8"/>
 
   <!-- Corner Brackets -->
-  <g stroke="#00ff41" stroke-width="2" fill="none">
-    <path d="M 14 30 L 14 14 L 30 14" />
-    <path d="M 820 14 L 836 14 L 836 30" />
-    <path d="M 14 150 L 14 166 L 30 166" />
-    <path d="M 820 166 L 836 166 L 836 150" />
+  <g stroke="#89dceb" stroke-width="2" fill="none">
+    <path d="M 14 32 L 14 14 L 32 14" />
+    <path d="M 848 14 L 866 14 L 866 32" />
+    <path d="M 14 158 L 14 176 L 32 176" />
+    <path d="M 848 176 L 866 176 L 866 158" />
   </g>
 
   <!-- Islamic Geometric Stars (Left & Right Anchors) -->
-  <g transform="translate(60, 90)" stroke="#00ff41" stroke-width="1.2" fill="none" opacity="0.75">
+  <g transform="translate(64, 95)" stroke="#cba6f7" stroke-width="1.2" fill="none" opacity="0.85">
     <rect x="-16" y="-16" width="32" height="32" class="islamic-star"/>
     <rect x="-16" y="-16" width="32" height="32" transform="rotate(45)" class="islamic-star"/>
-    <circle cx="0" cy="0" r="3" fill="#00ff41"/>
+    <circle cx="0" cy="0" r="3.5" fill="#89dceb"/>
   </g>
 
-  <g transform="translate(790, 90)" stroke="#00ff41" stroke-width="1.2" fill="none" opacity="0.75">
+  <g transform="translate(816, 95)" stroke="#cba6f7" stroke-width="1.2" fill="none" opacity="0.85">
     <rect x="-16" y="-16" width="32" height="32" class="islamic-star"/>
     <rect x="-16" y="-16" width="32" height="32" transform="rotate(45)" class="islamic-star"/>
-    <circle cx="0" cy="0" r="3" fill="#00ff41"/>
+    <circle cx="0" cy="0" r="3.5" fill="#89dceb"/>
   </g>
 
   <!-- Header Mini Label -->
-  <text x="50%" y="28" text-anchor="middle" fill="#00ff41" font-family="'Courier New', monospace" font-size="10" font-weight="900" letter-spacing="3">[SACRED PROTOCOL // DIVINE PROVIDENCE]</text>
-  <line x1="120" y1="36" x2="730" y2="36" class="hud-creed-line"/>
+  <text x="50%" y="30" text-anchor="middle" fill="#cba6f7" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="800" letter-spacing="3">
+    [ SACRED PROTOCOL // DIVINE PROVIDENCE ]
+  </text>
+  <line x1="140" y1="38" x2="740" y2="38" class="hud-creed-line"/>
 
   <!-- Arabic Quran Verse -->
-  <text x="50%" y="82" text-anchor="middle" class="arabic-text" filter="url(#arabic-glow)">
+  <text x="50%" y="86" text-anchor="middle" class="arabic-text" filter="url(#arabic-glow)">
     وَمَا تَوْفِيقِي إِلَّا بِاللَّهِ ۚ عَلَيْهِ تَوَكَّلْتُ وَإِلَيْهِ أُنِيبُ
   </text>
 
   <!-- English Translation -->
-  <text x="50%" y="122" text-anchor="middle" class="translation-text">
+  <text x="50%" y="126" text-anchor="middle" class="translation-text">
     "And my success is not but through Allah. Upon Him I have relied, and to Him I return."
   </text>
 
-  <!-- Surah Reference -->
-  <text x="50%" y="152" text-anchor="middle" class="reference-text">
-    — SURAH HUD [11:88] • PRINCIPLE OF TAWAQQUL —
+  <!-- Surah Reference & Amal Jariyah Subtitle -->
+  <text x="50%" y="156" text-anchor="middle" class="reference-text">
+    ── QS. HUD [11:88] // INTENTION: AMAL JARIYAH ──
   </text>
 </svg>

@@ -1,0 +1,325 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 500" width="100%" height="100%">
+  <defs>
+    <!-- Dark Hyprland Wallpaper Background -->
+    <radialGradient id="hypr-bg" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#1e1e2e"/>
+      <stop offset="50%" stop-color="#181825"/>
+      <stop offset="100%" stop-color="#11111b"/>
+    </radialGradient>
+
+    <!-- Animated Active Window Border Gradient -->
+    <linearGradient id="active-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cba6f7">
+        <animate attributeName="stop-color" values="#cba6f7;#89b4fa;#89dceb;#a6e3a1;#f5c2e7;#cba6f7" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#89b4fa">
+        <animate attributeName="stop-color" values="#89b4fa;#89dceb;#a6e3a1;#f5c2e7;#cba6f7;#89b4fa" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#89dceb">
+        <animate attributeName="stop-color" values="#89dceb;#a6e3a1;#f5c2e7;#cba6f7;#89b4fa;#89dceb" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Subtle Inactive Border -->
+    <linearGradient id="inactive-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#313244"/>
+      <stop offset="100%" stop-color="#45475a"/>
+    </linearGradient>
+
+    <!-- Glow Filter for Active Elements -->
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Drop Shadow for Windows -->
+    <filter id="window-shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <style>
+      @keyframes pulse-live {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.4; transform: scale(0.92); }
+      }
+      @keyframes cursor-blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      @keyframes wave-flow {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -40; }
+      }
+      @keyframes float-badge {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-3px); }
+      }
+
+      .hypr-font {
+        font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+      }
+      .cursor {
+        animation: cursor-blink 1s infinite;
+      }
+      .live-dot {
+        animation: pulse-live 2s infinite ease-in-out;
+        transform-origin: center;
+      }
+      .signal-line {
+        stroke-dasharray: 6 3;
+        animation: wave-flow 3s linear infinite;
+      }
+      .badge-glow {
+        animation: float-badge 4s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- ==================== BACKGROUND ==================== -->
+  <rect width="920" height="500" rx="14" fill="url(#hypr-bg)" stroke="#313244" stroke-width="1.5"/>
+
+  <!-- Wallpaper Geometric Accents (Wayland style) -->
+  <g opacity="0.08">
+    <circle cx="200" cy="200" r="160" fill="none" stroke="#cba6f7" stroke-width="1.5"/>
+    <circle cx="200" cy="200" r="260" fill="none" stroke="#89b4fa" stroke-width="1"/>
+    <polygon points="750,80 880,300 620,320" fill="none" stroke="#89dceb" stroke-width="1.5"/>
+    <path d="M 0,350 Q 450,280 920,400" fill="none" stroke="#cba6f7" stroke-width="2"/>
+  </g>
+
+  <!-- ==================== FLOATING WAYBAR ==================== -->
+  <g id="waybar" transform="translate(18, 12)">
+    <!-- Waybar Container Frame -->
+    <rect width="884" height="34" rx="10" fill="#181825" fill-opacity="0.92" stroke="#313244" stroke-width="1.2" filter="url(#window-shadow)"/>
+
+    <!-- Left Module: Workspaces (Hyprland style) -->
+    <g transform="translate(10, 6)">
+      <!-- Workspace 1 (Active) -->
+      <rect x="0" y="0" width="30" height="22" rx="6" fill="#cba6f7" fill-opacity="0.25" stroke="#cba6f7" stroke-width="1.2"/>
+      <text x="15" y="15" class="hypr-font" font-size="11" font-weight="bold" fill="#cba6f7" text-anchor="middle">1:</text>
+
+      <!-- Workspace 2 -->
+      <rect x="36" y="0" width="28" height="22" rx="6" fill="#1e1e2e" stroke="#45475a" stroke-width="0.8"/>
+      <text x="50" y="15" class="hypr-font" font-size="11" fill="#a6adc8" text-anchor="middle">2:󰈹</text>
+
+      <!-- Workspace 3 -->
+      <rect x="70" y="0" width="28" height="22" rx="6" fill="#1e1e2e" stroke="#45475a" stroke-width="0.8"/>
+      <text x="84" y="15" class="hypr-font" font-size="11" fill="#a6adc8" text-anchor="middle">3:</text>
+
+      <!-- Workspace 4 -->
+      <rect x="104" y="0" width="28" height="22" rx="6" fill="#1e1e2e" stroke="#45475a" stroke-width="0.8"/>
+      <text x="118" y="15" class="hypr-font" font-size="11" fill="#a6adc8" text-anchor="middle">4:󰝚</text>
+
+      <!-- Workspace 5 -->
+      <rect x="138" y="0" width="28" height="22" rx="6" fill="#1e1e2e" stroke="#45475a" stroke-width="0.8"/>
+      <text x="152" y="15" class="hypr-font" font-size="11" fill="#a6adc8" text-anchor="middle">5:󰙯</text>
+    </g>
+
+    <!-- Center Module: Active Window Title Pill -->
+    <g transform="translate(262, 5)">
+      <rect width="360" height="24" rx="8" fill="#1e1e2e" stroke="#45475a" stroke-width="0.8"/>
+      <circle cx="16" cy="12" r="4" fill="#a6e3a1" class="live-dot"/>
+      <text x="28" y="16" class="hypr-font" font-size="11" font-weight="600" fill="#cdd6f4">
+        󰣇 cachyos :: hyprland (wayland) :: arrafi@cachyos-bore
+      </text>
+    </g>
+
+    <!-- Right Module: System Stat Pills -->
+    <g transform="translate(642, 6)">
+      <!-- CPU Pill -->
+      <rect x="0" y="0" width="68" height="22" rx="6" fill="#1e1e2e" stroke="#45475a" stroke-width="0.8"/>
+      <text x="34" y="15" class="hypr-font" font-size="10" font-weight="600" fill="#fab387" text-anchor="middle"> 14.2%</text>
+
+      <!-- RAM Pill -->
+      <rect x="73" y="0" width="70" height="22" rx="6" fill="#1e1e2e" stroke="#45475a" stroke-width="0.8"/>
+      <text x="108" y="15" class="hypr-font" font-size="10" font-weight="600" fill="#f9e2af" text-anchor="middle"> 4.2 GiB</text>
+
+      <!-- Clock Pill -->
+      <rect x="148" y="0" width="84" height="22" rx="6" fill="#cba6f7" fill-opacity="0.15" stroke="#cba6f7" stroke-width="1"/>
+      <text x="190" y="15" class="hypr-font" font-size="10" font-weight="bold" fill="#cba6f7" text-anchor="middle"> 15:42 WIB</text>
+    </g>
+  </g>
+
+  <!-- ==================== TILING WINDOW 1 (MASTER: FASTFETCH TERMINAL) ==================== -->
+  <g id="window-terminal" transform="translate(18, 58)" filter="url(#window-shadow)">
+    <!-- Active Animated Border -->
+    <rect width="554" height="424" rx="10" fill="#181825" fill-opacity="0.95" stroke="url(#active-border)" stroke-width="2"/>
+
+    <!-- Window Titlebar -->
+    <path d="M 0,10 Q 0,0 10,0 L 544,0 Q 554,0 554,10 L 554,32 L 0,32 Z" fill="#11111b" fill-opacity="0.9"/>
+    <line x1="0" y1="32" x2="554" y2="32" stroke="#313244" stroke-width="1"/>
+
+    <!-- Window Controls (Catppuccin Mac/Hyprland Dots) -->
+    <circle cx="18" cy="16" r="5.5" fill="#f38ba8"/>
+    <circle cx="34" cy="16" r="5.5" fill="#f9e2af"/>
+    <circle cx="50" cy="16" r="5.5" fill="#a6e3a1"/>
+
+    <text x="277" y="20" class="hypr-font" font-size="11" font-weight="600" fill="#a6adc8" text-anchor="middle">
+       kitty — zsh 5.9 :: fastfetch
+    </text>
+
+    <!-- Terminal Inner Content -->
+    <!-- Fastfetch Left: Hyprland / CachyOS Stylized ASCII Logo -->
+    <g transform="translate(18, 50)">
+      <path d="M 12 10 L 60 10 L 80 40 L 40 95 L 12 50 Z" fill="none" stroke="#cba6f7" stroke-width="3" filter="url(#neon-glow)"/>
+      <path d="M 50 25 L 98 25 L 118 55 L 78 110 L 50 65 Z" fill="none" stroke="#89b4fa" stroke-width="3"/>
+      <path d="M 30 70 L 65 70 L 80 92 L 52 130 L 30 95 Z" fill="none" stroke="#89dceb" stroke-width="2.5"/>
+      <circle cx="65" cy="65" r="5" fill="#a6e3a1"/>
+      <text x="65" y="160" class="hypr-font" font-size="11" font-weight="900" fill="#cba6f7" text-anchor="middle" letter-spacing="2">HYPRLAND</text>
+      <text x="65" y="176" class="hypr-font" font-size="9" font-weight="600" fill="#89dceb" text-anchor="middle" letter-spacing="1">WAYLAND RICE</text>
+
+      <!-- Mini Color Palette Bars -->
+      <g transform="translate(10, 200)">
+        <rect x="0" y="0" width="12" height="10" rx="3" fill="#f38ba8"/>
+        <rect x="15" y="0" width="12" height="10" rx="3" fill="#fab387"/>
+        <rect x="30" y="0" width="12" height="10" rx="3" fill="#f9e2af"/>
+        <rect x="45" y="0" width="12" height="10" rx="3" fill="#a6e3a1"/>
+        <rect x="60" y="0" width="12" height="10" rx="3" fill="#89dceb"/>
+        <rect x="75" y="0" width="12" height="10" rx="3" fill="#89b4fa"/>
+        <rect x="90" y="0" width="12" height="10" rx="3" fill="#cba6f7"/>
+        <rect x="105" y="0" width="12" height="10" rx="3" fill="#b4befe"/>
+      </g>
+    </g>
+
+    <!-- Fastfetch Right: System Info Specifications -->
+    <g transform="translate(160, 52)" class="hypr-font">
+      <!-- User & Host Header -->
+      <text x="0" y="14" font-size="14" font-weight="bold">
+        <tspan fill="#cba6f7">arrafi</tspan><tspan fill="#6c7086">@</tspan><tspan fill="#89b4fa">cachyos-bore</tspan>
+      </text>
+      <line x1="0" y1="22" x2="370" y2="22" stroke="#45475a" stroke-width="1"/>
+
+      <!-- Specs Items -->
+      <g font-size="11" transform="translate(0, 38)">
+        <text y="0"><tspan fill="#89dceb" font-weight="bold">OS        : </tspan><tspan fill="#cdd6f4">CachyOS Linux x86_64</tspan></text>
+        <text y="20"><tspan fill="#89dceb" font-weight="bold">Kernel    : </tspan><tspan fill="#cdd6f4">7.3.0-4-cachyos-bore (Zen/CFS)</tspan></text>
+        <text y="40"><tspan fill="#89dceb" font-weight="bold">Compositor: </tspan><tspan fill="#cba6f7" font-weight="bold">Hyprland v0.46 </tspan><tspan fill="#a6adc8">(Wayland)</tspan></text>
+        <text y="60"><tspan fill="#89dceb" font-weight="bold">Shell     : </tspan><tspan fill="#cdd6f4">zsh 5.9 + tmux 3.5a</tspan></text>
+        <text y="80"><tspan fill="#89dceb" font-weight="bold">Keybind   : </tspan><tspan fill="#fab387">Super+Alt+N</tspan><tspan fill="#a6adc8"> (Workspace switch)</tspan></text>
+        <text y="100"><tspan fill="#89dceb" font-weight="bold">Theme     : </tspan><tspan fill="#cdd6f4">Catppuccin Mocha [Mauve / Blue]</tspan></text>
+        <text y="120"><tspan fill="#89dceb" font-weight="bold">Security  : </tspan><tspan fill="#a6e3a1">Red Team / Exploit Dev / AppSec</tspan></text>
+        <text y="140"><tspan fill="#89dceb" font-weight="bold">AI Engine : </tspan><tspan fill="#cba6f7">9Router Gateway (Port 20128)</tspan></text>
+        <text y="160"><tspan fill="#89dceb" font-weight="bold">Mission   : </tspan><tspan fill="#f9e2af">"Technology as Amal Jariyah"</tspan></text>
+        <text y="180"><tspan fill="#89dceb" font-weight="bold">Status    : </tspan><tspan fill="#a6e3a1">● ACTIVE (Uptime: 100%)</tspan></text>
+      </g>
+
+      <!-- Terminal Command Prompt -->
+      <g transform="translate(0, 252)">
+        <rect x="0" y="0" width="370" height="74" rx="6" fill="#11111b" stroke="#313244" stroke-width="0.8"/>
+        <text x="12" y="22" font-size="11" fill="#89dceb">❯ hyprctl activewindow -j | jq '.class'</text>
+        <text x="12" y="42" font-size="11" fill="#a6e3a1">"kitty-terminal-main"</text>
+        <text x="12" y="62" font-size="11">
+          <tspan fill="#cba6f7">❯ </tspan><tspan fill="#cdd6f4">cve-audit --target scope --full-pwn</tspan><tspan fill="#89dceb" class="cursor"> █</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== TILING WINDOW 2 (SLAVE TOP: ACTIVE RECON & NEURAL SWARM) ==================== -->
+  <g id="window-recon" transform="translate(586, 58)" filter="url(#window-shadow)">
+    <rect width="316" height="202" rx="10" fill="#181825" fill-opacity="0.95" stroke="url(#inactive-border)" stroke-width="1.5"/>
+
+    <!-- Window Titlebar -->
+    <path d="M 0,10 Q 0,0 10,0 L 306,0 Q 316,0 316,10 L 316,30 L 0,30 Z" fill="#11111b" fill-opacity="0.9"/>
+    <line x1="0" y1="30" x2="316" y2="30" stroke="#313244" stroke-width="1"/>
+
+    <!-- Window Controls -->
+    <circle cx="16" cy="15" r="4.5" fill="#f38ba8"/>
+    <circle cx="28" cy="15" r="4.5" fill="#f9e2af"/>
+    <circle cx="40" cy="15" r="4.5" fill="#a6e3a1"/>
+
+    <text x="175" y="19" class="hypr-font" font-size="10.5" font-weight="600" fill="#89dceb" text-anchor="middle">
+      󰒋 security-daemon :: live
+    </text>
+
+    <!-- Content: Radar & Active Daemons -->
+    <g transform="translate(14, 42)" class="hypr-font">
+      <!-- Status rows -->
+      <g font-size="10">
+        <circle cx="4" cy="8" r="3.5" fill="#a6e3a1" class="live-dot"/>
+        <text x="14" y="12" fill="#cdd6f4">HexStrike AI Engine</text>
+        <text x="210" y="12" fill="#a6e3a1" font-weight="bold">:8888 [RUN]</text>
+
+        <circle cx="4" cy="28" r="3.5" fill="#89dceb" class="live-dot"/>
+        <text x="14" y="32" fill="#cdd6f4">9Router Multi-Mesh</text>
+        <text x="200" y="32" fill="#89dceb" font-weight="bold">:20128 [READY]</text>
+
+        <circle cx="4" cy="48" r="3.5" fill="#cba6f7" class="live-dot"/>
+        <text x="14" y="52" fill="#cdd6f4">EnumRust + Kheprimaat</text>
+        <text x="220" y="52" fill="#cba6f7" font-weight="bold">[ARMED]</text>
+
+        <circle cx="4" cy="68" r="3.5" fill="#fab387" class="live-dot"/>
+        <text x="14" y="72" fill="#cdd6f4">AutoInput Bridge API</text>
+        <text x="210" y="72" fill="#fab387" font-weight="bold">:8765 [SYNC]</text>
+      </g>
+
+      <!-- Mini Animated Activity Line -->
+      <g transform="translate(0, 96)">
+        <rect width="288" height="48" rx="6" fill="#11111b" stroke="#313244" stroke-width="0.8"/>
+        <text x="10" y="16" font-size="9.5" fill="#6c7086">TRAFFIC PACKET SPECTRUM (eBPF)</text>
+        <path d="M 12 36 Q 35 24 58 36 T 104 36 T 150 22 T 196 38 T 242 26 T 276 34" fill="none" stroke="#89b4fa" stroke-width="1.8" class="signal-line"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== TILING WINDOW 3 (SLAVE BOTTOM: HYPRLAND KEYBINDS & SHORTCUTS) ==================== -->
+  <g id="window-keybinds" transform="translate(586, 274)" filter="url(#window-shadow)">
+    <rect width="316" height="208" rx="10" fill="#181825" fill-opacity="0.95" stroke="url(#inactive-border)" stroke-width="1.5"/>
+
+    <!-- Window Titlebar -->
+    <path d="M 0,10 Q 0,0 10,0 L 306,0 Q 316,0 316,10 L 316,30 L 0,30 Z" fill="#11111b" fill-opacity="0.9"/>
+    <line x1="0" y1="30" x2="316" y2="30" stroke="#313244" stroke-width="1"/>
+
+    <!-- Window Controls -->
+    <circle cx="16" cy="15" r="4.5" fill="#f38ba8"/>
+    <circle cx="28" cy="15" r="4.5" fill="#f9e2af"/>
+    <circle cx="40" cy="15" r="4.5" fill="#a6e3a1"/>
+
+    <text x="175" y="19" class="hypr-font" font-size="10.5" font-weight="600" fill="#cba6f7" text-anchor="middle">
+      󰌌 hyprland.conf :: bindings
+    </text>
+
+    <!-- Keybinding Rows -->
+    <g transform="translate(14, 46)" class="hypr-font" font-size="10">
+      <g transform="translate(0, 0)">
+        <rect width="84" height="18" rx="4" fill="#313244"/>
+        <text x="42" y="13" fill="#89dceb" font-weight="bold" text-anchor="middle">SUPER + RET</text>
+        <text x="96" y="13" fill="#cdd6f4">Launch Terminal (Kitty)</text>
+      </g>
+
+      <g transform="translate(0, 26)">
+        <rect width="84" height="18" rx="4" fill="#cba6f7" fill-opacity="0.25" stroke="#cba6f7" stroke-width="0.8"/>
+        <text x="42" y="13" fill="#cba6f7" font-weight="bold" text-anchor="middle">SUPER+ALT+N</text>
+        <text x="96" y="13" fill="#cba6f7" font-weight="bold">Workspace Switch</text>
+      </g>
+
+      <g transform="translate(0, 52)">
+        <rect width="84" height="18" rx="4" fill="#313244"/>
+        <text x="42" y="13" fill="#f9e2af" font-weight="bold" text-anchor="middle">SUPER + D</text>
+        <text x="96" y="13" fill="#cdd6f4">Rofi / App Launcher</text>
+      </g>
+
+      <g transform="translate(0, 78)">
+        <rect width="84" height="18" rx="4" fill="#313244"/>
+        <text x="42" y="13" fill="#a6e3a1" font-weight="bold" text-anchor="middle">SUPER + E</text>
+        <text x="96" y="13" fill="#cdd6f4">Yazi File Explorer</text>
+      </g>
+
+      <g transform="translate(0, 104)">
+        <rect width="84" height="18" rx="4" fill="#313244"/>
+        <text x="42" y="13" fill="#f38ba8" font-weight="bold" text-anchor="middle">SUPER + Q</text>
+        <text x="96" y="13" fill="#cdd6f4">Kill Active Window</text>
+      </g>
+
+      <!-- Bottom Status Pill -->
+      <g transform="translate(0, 134)">
+        <rect width="288" height="22" rx="5" fill="#11111b" stroke="#313244" stroke-width="0.8"/>
+        <text x="144" y="15" fill="#a6adc8" font-size="9.5" text-anchor="middle">
+          Animation: <tspan fill="#89dceb">bezier: easeInOutCirc</tspan> | FPS: <tspan fill="#a6e3a1">165Hz</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
