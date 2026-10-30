@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 270" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 290" width="100%" height="100%">
   <defs>
     <!-- Background Gradient -->
-    <radialGradient id="stack-bg" cx="50%" cy="40%" r="80%">
+    <radialGradient id="stack-bg" cx="50%" cy="30%" r="85%">
       <stop offset="0%" stop-color="#243328"/>
       <stop offset="70%" stop-color="#1b291f"/>
       <stop offset="100%" stop-color="#121d15"/>
@@ -38,96 +38,97 @@
         stroke-dasharray: 8 4;
         animation: dash-flow 3s linear infinite;
       }
-      .card-1 { animation: hover-card 4s ease-in-out infinite; }
-      .card-2 { animation: hover-card 4s ease-in-out infinite 1.3s; }
-      .card-3 { animation: hover-card 4s ease-in-out infinite 2.6s; }
+      .card-1 { animation: hover-card 4.5s ease-in-out infinite; }
+      .card-2 { animation: hover-card 4.5s ease-in-out infinite 1.5s; }
+      .card-3 { animation: hover-card 4.5s ease-in-out infinite 3s; }
     </style>
   </defs>
 
-  <!-- Container -->
-  <rect width="880" height="270" rx="16" fill="url(#stack-bg)" stroke="#344e41" stroke-width="1.5"/>
+  <!-- Main Container with Ample Padding -->
+  <rect width="920" height="290" rx="18" fill="url(#stack-bg)" stroke="#344e41" stroke-width="1.5"/>
 
-  <!-- Header Title -->
-  <g transform="translate(32, 28)">
-    <text class="font-mono" font-size="11" font-weight="700" fill="#a3c9a8" letter-spacing="2">
+  <!-- Header Section with Clear Spacing -->
+  <g transform="translate(36, 20)">
+    <text class="font-mono" font-size="11.5" font-weight="700" fill="#a3c9a8" letter-spacing="2">
       ENGINEERING ECOSYSTEM // CORE DISCIPLINES
     </text>
-    <text y="22" class="font-sans" font-size="16" font-weight="700" fill="#f4f1de">
+    <text y="26" class="font-sans" font-size="17" font-weight="700" fill="#f4f1de">
       Modern Web Craftsmanship: Clean Architecture &amp; Fluid Interfaces
     </text>
-    <line x1="0" y1="34" x2="816" y2="34" stroke="#2d4233" stroke-width="1"/>
+    <line x1="0" y1="42" x2="850" y2="42" stroke="#2d4233" stroke-width="1.2"/>
   </g>
 
-  <!-- Three Columns Cards -->
-  <!-- Column 1: Client & Interface -->
-  <g transform="translate(32, 78)" class="card-1">
-    <rect width="258" height="166" rx="12" fill="url(#card-grad)" stroke="#3d5a44" stroke-width="1.2"/>
-    <rect width="258" height="166" rx="12" fill="none" stroke="#a3c9a8" stroke-width="1" class="anim-dash" opacity="0.6"/>
+  <!-- Three Columns Cards (Horizontal Layout with Clear Spacing) -->
+  
+  <!-- Column 1: Client &amp; Interface -->
+  <g transform="translate(36, 72)" class="card-1">
+    <rect width="264" height="190" rx="13" fill="url(#card-grad)" stroke="#3d5a44" stroke-width="1.3"/>
+    <rect width="264" height="190" rx="13" fill="none" stroke="#a3c9a8" stroke-width="1.2" class="anim-dash" opacity="0.7"/>
     
     <!-- Top Pill -->
-    <rect x="16" y="14" width="226" height="26" rx="7" fill="#1b291f" stroke="#4a6b52" stroke-width="0.8"/>
-    <circle cx="28" cy="27" r="4" fill="#a3c9a8" class="pulse-dot"/>
-    <text x="38" y="31" class="font-mono" font-size="10.5" font-weight="700" fill="#c7efcf">CLIENT &amp; UI DESIGN</text>
+    <rect x="16" y="14" width="232" height="28" rx="8" fill="#1b291f" stroke="#4a6b52" stroke-width="1"/>
+    <circle cx="30" cy="28" r="4.5" fill="#a3c9a8" class="pulse-dot"/>
+    <text x="42" y="33" class="font-mono" font-size="11" font-weight="800" fill="#c7efcf">CLIENT &amp; UI DESIGN</text>
 
-    <!-- Content Items -->
-    <g transform="translate(16, 54)" class="font-sans">
-      <text y="14" font-size="12" font-weight="600" fill="#f4f1de">React &amp; Next.js Ecosystem</text>
-      <text y="30" class="font-mono" font-size="10" fill="#a3c9a8">TypeScript, JavaScript, Vite</text>
+    <!-- Content -->
+    <g transform="translate(16, 58)" class="font-sans">
+      <text y="0" font-size="12.5" font-weight="700" fill="#f4f1de">React &amp; Next.js</text>
+      <text y="18" class="font-mono" font-size="10.5" fill="#a3c9a8">TypeScript, Vite, Tailwind</text>
       
-      <text y="54" font-size="12" font-weight="600" fill="#f4f1de">Design &amp; Styling Systems</text>
-      <text y="70" class="font-mono" font-size="10" fill="#a3c9a8">Tailwind CSS, Figma UI/UX</text>
+      <text y="48" font-size="12.5" font-weight="700" fill="#f4f1de">UI Design Systems</text>
+      <text y="66" class="font-mono" font-size="10.5" fill="#a3c9a8">Figma, Accessibility, UX</text>
 
-      <!-- Bottom Status -->
-      <rect x="0" y="86" width="226" height="18" rx="5" fill="#17241b"/>
-      <text x="113" y="99" class="font-mono" font-size="9" fill="#c7efcf" text-anchor="middle">Focus: Responsive &amp; Accessible</text>
+      <!-- Bottom Badge -->
+      <rect x="0" y="90" width="232" height="22" rx="6" fill="#17241b" stroke="#2d4233" stroke-width="0.8"/>
+      <text x="116" y="107" class="font-mono" font-size="10" fill="#c7efcf" text-anchor="middle" font-weight="600">Responsive &amp; Accessible</text>
     </g>
   </g>
 
-  <!-- Column 2: Backend & Logic -->
-  <g transform="translate(311, 78)" class="card-2">
-    <rect width="258" height="166" rx="12" fill="url(#card-grad)" stroke="#3d5a44" stroke-width="1.2"/>
-    <rect width="258" height="166" rx="12" fill="none" stroke="#f7d6c8" stroke-width="1" class="anim-dash" opacity="0.6"/>
+  <!-- Column 2: Backend &amp; Logic -->
+  <g transform="translate(328, 72)" class="card-2">
+    <rect width="264" height="190" rx="13" fill="url(#card-grad)" stroke="#3d5a44" stroke-width="1.3"/>
+    <rect width="264" height="190" rx="13" fill="none" stroke="#f7d6c8" stroke-width="1.2" class="anim-dash" opacity="0.7"/>
     
     <!-- Top Pill -->
-    <rect x="16" y="14" width="226" height="26" rx="7" fill="#1b291f" stroke="#4a6b52" stroke-width="0.8"/>
-    <circle cx="28" cy="27" r="4" fill="#f7d6c8" class="pulse-dot"/>
-    <text x="38" y="31" class="font-mono" font-size="10.5" font-weight="700" fill="#f7d6c8">BACKEND &amp; LOGIC</text>
+    <rect x="16" y="14" width="232" height="28" rx="8" fill="#1b291f" stroke="#4a6b52" stroke-width="1"/>
+    <circle cx="30" cy="28" r="4.5" fill="#f7d6c8" class="pulse-dot"/>
+    <text x="42" y="33" class="font-mono" font-size="11" font-weight="800" fill="#f7d6c8">BACKEND &amp; LOGIC</text>
 
-    <!-- Content Items -->
-    <g transform="translate(16, 54)" class="font-sans">
-      <text y="14" font-size="12" font-weight="600" fill="#f4f1de">Laravel &amp; Modern PHP</text>
-      <text y="30" class="font-mono" font-size="10" fill="#f7d6c8">REST APIs, Blade, Eloquent</text>
+    <!-- Content -->
+    <g transform="translate(16, 58)" class="font-sans">
+      <text y="0" font-size="12.5" font-weight="700" fill="#f4f1de">Laravel &amp; PHP</text>
+      <text y="18" class="font-mono" font-size="10.5" fill="#f7d6c8">REST APIs, Eloquent, Blade</text>
       
-      <text y="54" font-size="12" font-weight="600" fill="#f4f1de">Python &amp; API Microservices</text>
-      <text y="70" class="font-mono" font-size="10" fill="#f7d6c8">FastAPI, Automation, Scripting</text>
+      <text y="48" font-size="12.5" font-weight="700" fill="#f4f1de">Python Microservices</text>
+      <text y="66" class="font-mono" font-size="10.5" fill="#f7d6c8">FastAPI, Scripting, Automation</text>
 
-      <!-- Bottom Status -->
-      <rect x="0" y="86" width="226" height="18" rx="5" fill="#17241b"/>
-      <text x="113" y="99" class="font-mono" font-size="9" fill="#f7d6c8" text-anchor="middle">Focus: Clean Architecture &amp; Integrity</text>
+      <!-- Bottom Badge -->
+      <rect x="0" y="90" width="232" height="22" rx="6" fill="#17241b" stroke="#2d4233" stroke-width="0.8"/>
+      <text x="116" y="107" class="font-mono" font-size="10" fill="#f7d6c8" text-anchor="middle" font-weight="600">Clean Architecture &amp; Quality</text>
     </g>
   </g>
 
-  <!-- Column 3: Data & Workbench -->
-  <g transform="translate(590, 78)" class="card-3">
-    <rect width="258" height="166" rx="12" fill="url(#card-grad)" stroke="#3d5a44" stroke-width="1.2"/>
-    <rect width="258" height="166" rx="12" fill="none" stroke="#ffeaa7" stroke-width="1" class="anim-dash" opacity="0.6"/>
+  <!-- Column 3: Data &amp; Infrastructure -->
+  <g transform="translate(620, 72)" class="card-3">
+    <rect width="264" height="190" rx="13" fill="url(#card-grad)" stroke="#3d5a44" stroke-width="1.3"/>
+    <rect width="264" height="190" rx="13" fill="none" stroke="#ffeaa7" stroke-width="1.2" class="anim-dash" opacity="0.7"/>
     
     <!-- Top Pill -->
-    <rect x="16" y="14" width="226" height="26" rx="7" fill="#1b291f" stroke="#4a6b52" stroke-width="0.8"/>
-    <circle cx="28" cy="27" r="4" fill="#ffeaa7" class="pulse-dot"/>
-    <text x="38" y="31" class="font-mono" font-size="10.5" font-weight="700" fill="#ffeaa7">DATA &amp; ENVIRONMENT</text>
+    <rect x="16" y="14" width="232" height="28" rx="8" fill="#1b291f" stroke="#4a6b52" stroke-width="1"/>
+    <circle cx="30" cy="28" r="4.5" fill="#ffeaa7" class="pulse-dot"/>
+    <text x="42" y="33" class="font-mono" font-size="11" font-weight="800" fill="#ffeaa7">DATA &amp; INFRASTRUCTURE</text>
 
-    <!-- Content Items -->
-    <g transform="translate(16, 54)" class="font-sans">
-      <text y="14" font-size="12" font-weight="600" fill="#f4f1de">Persistence &amp; Storage</text>
-      <text y="30" class="font-mono" font-size="10" fill="#ffeaa7">PostgreSQL, MySQL, Redis</text>
+    <!-- Content -->
+    <g transform="translate(16, 58)" class="font-sans">
+      <text y="0" font-size="12.5" font-weight="700" fill="#f4f1de">Persistence &amp; Storage</text>
+      <text y="18" class="font-mono" font-size="10.5" fill="#ffeaa7">PostgreSQL, MySQL, Redis</text>
       
-      <text y="54" font-size="12" font-weight="600" fill="#f4f1de">Workflow &amp; Operations</text>
-      <text y="70" class="font-mono" font-size="10" fill="#ffeaa7">Docker, Linux, Git, Neovim</text>
+      <text y="48" font-size="12.5" font-weight="700" fill="#f4f1de">Workflow &amp; DevOps</text>
+      <text y="66" class="font-mono" font-size="10.5" fill="#ffeaa7">Docker, Linux, Git, Neovim</text>
 
-      <!-- Bottom Status -->
-      <rect x="0" y="86" width="226" height="18" rx="5" fill="#17241b"/>
-      <text x="113" y="99" class="font-mono" font-size="9" fill="#ffeaa7" text-anchor="middle">Focus: Reliable &amp; Repeatable Dev</text>
+      <!-- Bottom Badge -->
+      <rect x="0" y="90" width="232" height="22" rx="6" fill="#17241b" stroke="#2d4233" stroke-width="0.8"/>
+      <text x="116" y="107" class="font-mono" font-size="10" fill="#ffeaa7" text-anchor="middle" font-weight="600">Reliable &amp; Repeatable</text>
     </g>
   </g>
 </svg>
